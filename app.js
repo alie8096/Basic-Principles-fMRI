@@ -1,6 +1,6 @@
 var currentPage = 0;
 var totalPages = document.querySelectorAll(".slide").length;
-var pageNumber = document.getElementByID("pageNumber");
+var pageNumber = document.getElementById("pageNumber");
 
 document.addEventListener("keydown", function(event) {
     if (event.key === "ArrowLeft") {
@@ -25,6 +25,9 @@ function showPreviousSlide() {
         previousSlide.classList.add("active");
         currentPage--;
         updateFooter();
+        
+        // Check if the slide is viewable
+        checkShowablity(previousSlide.id)
     }
 }
 
@@ -41,6 +44,8 @@ function showNextSlide() {
         nextSlide.classList.add("active");
         currentPage++;
         updateFooter();
+        // Check if the slide is viewable
+        checkShowablity(nextSlide.id)
     }
 }
 
@@ -53,5 +58,26 @@ function getCurrentSlide() {
 
 function updateFooter() {
     // update the footer with current page number
-    pageNumber.textContent = currentPage + " / " + totalPages
+    pageNumber.textContent = currentPage + " / " + (totalPages - 1);
+}
+
+
+function checkShowablity(slide) {
+    if (slide === "slide0") {
+        hideHeaderAndFooter();
+    } else {
+        showHeaderAndFooter();
+    }
+}
+
+function showHeaderAndFooter() {
+    // Show header and footer
+    document.querySelector("header").style.display = "block";
+    document.querySelector("footer").style.display = "block";
+}
+
+function hideHeaderAndFooter() {
+    // Hide heaser and  footer
+    document.querySelector("header").style.display = "none";
+    document.querySelector("footer").style.display = "none";
 }

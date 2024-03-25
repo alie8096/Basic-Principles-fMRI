@@ -2,7 +2,8 @@
 
 ## Features
 
-- [] fix moving slides
+- [x] fix moving slides
+- [x] Hide `Header` and `Footer` on slide0
 
 ## HTML
 
