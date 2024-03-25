@@ -24,6 +24,7 @@ Special thanks to [contributors](CONTRIBUTORS.md) who have contributed to this p
 - `style.css`: CSS file for styling the presentation.
 - `script.js`: JavaScript file for adding interactivity and functionality.
 - `images/`: Directory containing images used in the presentation.
+- `app.py`: Flask application script for serving the presentation.
 
 ## Usage
 
