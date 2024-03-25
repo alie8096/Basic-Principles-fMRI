@@ -2,6 +2,22 @@
 
 This repository contains the source code for a presentation about fMRI (functional magnetic resonance imaging) imaging method and its performance, developed for the imaging course in medical engineering at Shahrekord Azad University.
 
+## About
+
+The presentation covers the principles and applications of fMRI imaging in neuroscience and medical research. It provides an overview of the technology, its methodology, and its significance in understanding brain function and pathology.
+
+## Author
+
+- **Author**: Ali Ebrahimian
+
+## License
+
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE.md](LICENSE.md) file for details.
+
+<!-- ## Acknowledgements
+
+Special thanks to [contributors](CONTRIBUTORS.md) who have contributed to this project. -->
+
 ## Contents
 
 - `index.html`: The main HTML file for the presentation.
@@ -13,14 +29,15 @@ This repository contains the source code for a presentation about fMRI (function
 
 To view the presentation, simply open `index.html` in a web browser.
 
-## About fMRI Imaging
+## Contributions
 
-Functional magnetic resonance imaging (fMRI) is a non-invasive neuroimaging technique used to measure and map brain activity. It detects changes in blood flow and oxygenation levels in response to neural activity, providing insights into brain function and connectivity.
+Contributions are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## Credits
+Please make sure to update tests as appropriate.
 
-This presentation was created by [Your Name] for the imaging course at Shahrekord Azad University.
+## Contact
 
-## License
+For any inquiries or suggestions regarding the project, feel free to contact the author:
 
-This project is licensed under the [License Name] License - see the LICENSE.md file for details.
+- Email: [ali.ebrahimian.2001.12.16@gmail.com](mailto:ali.ebrahimian.2001.12.16@gmail.com)
+- GitHub: [@alie8096](https://github.com/@alie8096)
