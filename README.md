@@ -12,7 +12,7 @@ The presentation covers the principles and applications of fMRI imaging in neuro
 
 ## License
 
-This project is licensed under the GNU General Public License v3.0 - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE.md]([LICENSE.md](https://github.com/alie8096/fmri-immaging-course-presentation/blob/main/LICENSE)) file for details.
 
 <!-- ## Acknowledgements
 
