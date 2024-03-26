@@ -58,6 +58,10 @@ function getCurrentSlide() {
 
 function updateFooter() {
     // update the footer with current page number
+    if (currentPage.toString().length !== totalPages.toString().length) {
+        const leadingZeroes = Array(totalPages.toString().length - currentPage.toString().length).fill('0').join('');
+        currentPage = leadingZeroes + currentPage;
+    }
     pageNumber.textContent = currentPage + " / " + (totalPages - 1);
 }
 
