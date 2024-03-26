@@ -64,20 +64,8 @@ function updateFooter() {
 
 function checkShowablity(slide) {
     if (slide === "slide0") {
-        hideHeaderAndFooter();
+        document.querySelector("footer").style.display = "none";
     } else {
-        showHeaderAndFooter();
+        document.querySelector("footer").style.display = "block";
     }
-}
-
-function showHeaderAndFooter() {
-    // Show header and footer
-    document.querySelector("header").style.display = "block";
-    document.querySelector("footer").style.display = "block";
-}
-
-function hideHeaderAndFooter() {
-    // Hide heaser and  footer
-    document.querySelector("header").style.display = "none";
-    document.querySelector("footer").style.display = "none";
 }
