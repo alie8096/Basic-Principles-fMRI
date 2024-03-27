@@ -2,6 +2,7 @@
 
 ## Features
 
+- [ ] Add images related to each text
 - [x] Writing all project text
 - [x] Use green and red boxes for advantages and dis advantages
 - [ ] Adding related icons to different parts
