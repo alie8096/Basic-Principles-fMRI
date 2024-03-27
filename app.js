@@ -73,3 +73,4 @@ function checkShowablity(slide) {
         document.querySelector("footer").style.display = "block";
     }
 }
+
