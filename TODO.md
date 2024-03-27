@@ -2,10 +2,12 @@
 
 ## Features
 
+- [ ] Add images related to each text
+- [x] Writing all project text
+- [x] Use green and red boxes for advantages and dis advantages
 - [ ] Adding related icons to different parts
 - [ ] Adding logo
 - [ ] Editing `slide0` for the project cover
-
 - - [ ] Adding names of author
 - - [ ] Adding name of professor
 - - [ ] Adding a beautifu and related backgraound
