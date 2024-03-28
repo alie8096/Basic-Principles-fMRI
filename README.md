@@ -24,9 +24,9 @@ Special thanks to [contributors](CONTRIBUTORS.md) who have contributed to this p
 
 [![Language](https://img.shields.io/github/languages/count/alie8096/fmri-immaging-course-presentation)](https://github.com/alie8096/fmri-immaging-course-presentation)
 
-[![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](https://github.com/alie8096/fmri-immaging-course-presentation)
-[![HTML](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)](https://github.com/alie8096/fmri-immaging-course-presentation)
-[![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://github.com/alie8096/fmri-immaging-course-presentation)
+[![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E&labelColor=F7DF1E&color=323330&label=&labelColor=black)](https://github.com/alie8096/fmri-immaging-course-presentation)
+[![HTML](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white&labelColor=white&color=239120&label=&labelColor=black)](https://github.com/alie8096/fmri-immaging-course-presentation)
+[![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white&labelColor=white&color=1572B6&label=&labelColor=black)](https://github.com/alie8096/fmri-immaging-course-presentation)
 
 ## Contents
 
