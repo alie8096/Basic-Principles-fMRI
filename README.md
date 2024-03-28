@@ -23,7 +23,10 @@ Special thanks to [contributors](CONTRIBUTORS.md) who have contributed to this p
 [![Top Language](https://img.shields.io/github/languages/top/alie8096/fmri-immaging-course-presentation)](https://github.com/alie8096/fmri-immaging-course-presentation)
 
 [![Language](https://img.shields.io/github/languages/count/alie8096/fmri-immaging-course-presentation)](https://github.com/alie8096/fmri-immaging-course-presentation)
+
 [![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](https://github.com/alie8096/fmri-immaging-course-presentation)
+[![HTML](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)](https://github.com/alie8096/fmri-immaging-course-presentation)
+[![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://github.com/alie8096/fmri-immaging-course-presentation)
 
 ## Contents
 
