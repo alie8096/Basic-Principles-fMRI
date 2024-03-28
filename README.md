@@ -12,17 +12,22 @@ The presentation covers the principles and applications of fMRI imaging in neuro
 
 ## License
 
-This project is licensed under the GNU General Public License v3.0 - see the [LICENSE.md]([LICENSE.md](https://github.com/alie8096/fmri-immaging-course-presentation/blob/main/LICENSE)) file for details.
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE.md](LICENSE) file for details.
 
 <!-- ## Acknowledgements
 
 Special thanks to [contributors](CONTRIBUTORS.md) who have contributed to this project. -->
 
+## Language Distribution
+
+[![All Language](https://img.shields.io/github/languages/top/alie8096/fmri-immaging-course-presentation)](https://github.com/alie8096/fmri-immaging-course-presentation)
+
+
 ## Contents
 
 - `index.html`: The main HTML file for the presentation.
 - `style.css`: CSS file for styling the presentation.
-- `script.js`: JavaScript file for adding interactivity and functionality.
+- `app.js`: JavaScript file for adding interactivity and functionality.
 - `images/`: Directory containing images used in the presentation.
 
 ## Usage
