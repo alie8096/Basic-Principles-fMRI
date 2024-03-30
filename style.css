@@ -1,0 +1,176 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Noto+Naskh+Arabic:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: "Noto Naskh Arabic", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+.container {
+    max-width: 90%;
+    max-height: calc(100vh - 100px);
+    margin:20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+main {
+    text-align: center;
+}
+
+.slide {
+    display: none;
+    width: 90%;
+    margin: 0 auto;
+    height: calc(100vh - 100px);
+}
+
+.slide.active {
+    display: block;
+}
+
+footer {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    position: fixed;
+    width: 90%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    border-radius: 15px;
+}
+
+.date {
+    float: left;
+    margin-right: auto;
+    padding-left: 20px;
+}
+
+.fTitle {
+    font-weight: 900;
+    text-align: center;
+}
+
+.pageNumber {
+    float: right;
+    margin-left: auto;
+    padding-right: 20px;
+}
+
+/* --------------------------------- Content ------------------------- */
+
+.titre {
+    text-align: right;
+}
+
+.slide-title {
+    text-align: center;
+}
+
+.slide-content {
+    text-align: right;
+}
+
+.slide-list {
+    text-align: right;
+    direction: rtl;
+   list-style-position: inside;
+}
+
+.slide-titre {
+    text-align: right;
+}
+
+.main-title {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+
+.math {
+    white-space: nowrap;
+    padding: 0;
+}
+
+/* Style for advantages and disadvantages boxes */
+.slide-box-content {
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90%;
+}
+
+.boxes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantages-box, .disadvantages-box {
+    color: white;
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 20px;
+    margin-right: 10px;
+    vertical-align: top;
+    display: inline-block;
+    width: calc(50% - 10px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    flex-grow: 1;
+    height: 100%;
+}
+
+.advantages-box {
+    background-color: #4CAF50;
+
+}
+
+.disadvantages-box {
+    background-color: #ee675d;
+}
+
+/* --------------- table --------------- */
+.comparison-table {
+    margin: 20px auto;
+    width: 90%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td:first-child {
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+
+.helper {
+    font-size: smaller;
+}
