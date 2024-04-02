@@ -190,7 +190,8 @@ td:first-child {
 }
 
 .arrow {
-    width: 40px;
+    font-size: 40px;
+    color: rgb(49, 49, 49);
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
