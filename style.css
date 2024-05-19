@@ -232,14 +232,6 @@ img.bg {
 	width: 600px;
 }
 
-img.photo {
-	width: 560px;
-	/* mask: url("images/page-one/Artboard 2.png");
-	mask-repeat: no-repeat;
-	mask-size: 560px;
-	mask-position: -23px -8px; */
-}
-
 
 .content {
 	width: 45%;
@@ -311,6 +303,15 @@ div.header {
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
+}
+
+.short {
+    text-align: left;
+    position: absolute;
+    top: 85px;
+
+    left: 5%;
+    width: 65%;
 }
 
 /* ------------------------------------------------------------------------------------------------------- */
@@ -524,14 +525,45 @@ li::marker {
 }
 
 
+.digital-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    margin-left: -70px;
+    padding: 25px 20px;
+    width: 90vw;
+    height: 50vh;
+    margin-top: -25px;
+}
+
+img.BOLD-signal {
+    position: absolute;
+    width: 400px;
+    top: 100px;
+}
+
+img.block-task {
+    width: 350px;
+    position: absolute;
+    right: -370px;
+    top: 50px;
+}
+
+
+.physic-mri {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+}
+
 
 /* Animation style */
 
 
 .animation-container {
     position: relative;
-    width: 600px; /* عرض استاندارد */
-    height: 600px; /* ارتفاع استاندارد */
     overflow: hidden; /* جلوگیری از خروج عناصر */
     background: white; /* پس‌زمینه سفید */
   }

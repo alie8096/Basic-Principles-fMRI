@@ -236,12 +236,18 @@
                     <h2>Basic Concepts</h2>
                     <h3>Digital Image</h3>
                     <p>A digital image is data stored numerically and can be analyzed by a computer. In fMRI, digital images represent the level of blood oxygenation in various parts of the brain and are stored as matrices of numerical values, with each element of the matrix representing a pixel with a specific intensity.</p>
-                    <img src="./images/output_rgb.svg" alt="rgb" width="90px">
-                    <img src="./images/output_red.svg" alt="red" width="90px">
-                    <img src="./images/output_green.svg" alt="green" width="90px">
-                    <img src="./images/output_blue.svg" alt="blue" width="90px">
-                    <img src="./images/output_black_white.svg" alt="bw" width="90px">
-                    <img src="./images/output.svg" alt="gray" width="90px">
+                    <div class="digital-images">
+                        <img src="./images/output_rgb.svg" alt="rgb" width="80%">
+
+                        <div class="rgb-shape">
+                            <img src="./images/output_red.svg" alt="red" width="45%">
+                            <img src="./images/output_green.svg" alt="green" width="45%">
+                            <img src="./images/output_blue.svg" alt="blue" width="45%">
+                        </div>
+
+                        <img src="./images/output_black_white.svg" alt="bw" width="80%">
+                        <img src="./images/output.svg" alt="gray" width="80%">
+                    </div>
 
                 </div>
             </div>
@@ -252,11 +258,13 @@
                     <h2>Basic Concepts</h2>
                     <h3>Hemodynamic Response Function (HRF)</h3>
                     <p>The Hemodynamic Response Function (HRF) describes how the brain responds to stimuli. HRF represents changes in the BOLD signal over time and is used in task design and data analysis. HRF helps us understand how the hemodynamic response changes over time following neural activity, which is crucial for analyzing fMRI data.</p>
-                      <!-- Impulse Function Animation -->
-                    <div class="animation-container" id="impulse-container">
-                        <canvas id="impulse-canvas"></canvas>
-                        <button id="play-button-impulse" class="play-button">▶️</button>
-                    </div>
+                    <div class="hemo-animation">
+                        <!-- Impulse Function Animation -->
+                        <div class="animation-container" id="impulse-container">
+                            <canvas id="impulse-canvas"></canvas>
+                            <button id="play-button-impulse" class="play-button">▶️</button>
+                        </div>
+                    </div> 
                 </div>
             </div>
 
@@ -280,7 +288,7 @@
                     <h2>Basic Concepts</h2>
                     <h3>fMRI Signal</h3>
                     <p>The BOLD (Blood Oxygen Level Dependent) signal forms the basis of fMRI. When a brain region is active, blood flow and oxygenation levels in that region increase. These changes lead to differences in magnetic signals captured by the MRI scanner. These signals are stored as image data and then analyzed to interpret brain activity.</p>
-                    <img src="./images/BOLD-signal.svg" alt="BOLD signal">
+                    <img src="./images/BOLD-signal.svg" alt="BOLD signal" class="BOLD-signal">
                 </div>
             </div>
 
@@ -301,12 +309,12 @@
                         </svg>
                         <!-- اسلایس‌ها -->
                         <div>
-                            <img id="slice1" class="slice" style="top: 200px; left: 40px;" src="slice1.svg" alt="Slice 1" />
-                            <img id="slice3" class="slice" style="top: 160px; left: 120px;" src="slice3.svg" alt="Slice 3" />
-                            <img id="slice5" class="slice" style="top: 120px; left: 200px;" src="slice5.svg" alt="Slice 5" />
-                            <img id="slice2" class="slice" style="top: 180px; left: 280px;" src="slice2.svg" alt="Slice 2" />
-                            <img id="slice4" class="slice" style="top: 140px; left: 360px;" src="slice4.svg" alt="Slice 4" />
-                            <img id="slice6" class="slice" style="top: 100px; left: 440px;" src="slice6.svg" alt="Slice 6" />
+                            <img id="slice1" class="slice" style="top: 200px; left: 40px;" src="images/slice1.svg" alt="Slice 1" />
+                            <img id="slice3" class="slice" style="top: 160px; left: 120px;" src="images/slice3.svg" alt="Slice 3" />
+                            <img id="slice5" class="slice" style="top: 120px; left: 200px;" src="images/slice5.svg" alt="Slice 5" />
+                            <img id="slice2" class="slice" style="top: 180px; left: 280px;" src="images/slice2.svg" alt="Slice 2" />
+                            <img id="slice4" class="slice" style="top: 140px; left: 360px;" src="images/slice4.svg" alt="Slice 4" />
+                            <img id="slice6" class="slice" style="top: 100px; left: 440px;" src="images/slice6.svg" alt="Slice 6" />
                         </div>
                     </div>
                 </div>
@@ -315,7 +323,7 @@
 
             <!-- اسلاید 17 -->
             <div id="slide17" class="slide">
-                <div class="information-content">
+                <div class="short">
                     <h2>Basic Concepts</h2>
                     <h3>Task Design</h3>
                     <p>Different tasks are designed for fMRI studies, including functional, cognitive, and emotional tasks. There are two main approaches to task design in fMRI studies:</p>
@@ -327,7 +335,7 @@
                             <p><span>Event-Related Design:</span> Tasks are presented randomly with random time intervals. This method provides higher temporal accuracy for analyzing brain responses to specific stimuli.</p>
                         </li>
                     </ul>
-                    <img src="./images/task-block-design.svg" alt="block task">
+                    <img src="./images/task-block-design.svg" alt="block task" class="block-task">
                 </div>
             </div>
 
@@ -370,7 +378,9 @@
                     <h2>Physics of MRI</h2>
                     <h3>The Physics and Philosophy of MRI Imaging</h3>
                     <p>MRI imaging is based on magnetic phenomena and nuclear resonance. In MRI, strong magnetic fields and radiofrequency pulses are used to create images of internal body structures. This process involves exciting hydrogen nuclei in the body and recording their magnetic responses.</p>
-                    <img src="./images/main-qimg-b19706e523af8272cb0b6c28daad27fa-lq.jpeg" alt="Physics MRI">
+                    <div class="physic-mri">
+                        <img src="./images/main-qimg-b19706e523af8272cb0b6c28daad27fa-lq.jpeg" alt="Physics MRI" width="100%">
+                    </div>
                 </div>
             </div>
 
