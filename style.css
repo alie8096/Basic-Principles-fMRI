@@ -248,8 +248,8 @@ img.bg {
 .main-brain-mask {
     position: absolute;
     z-index: 5;
-    top: 60px;
-    left: -18px;
+    top: 45px;
+    left: -25px;
     width: 710px;
 
     mask-image: url(./images/page-one/mask-brain.png);
@@ -279,6 +279,7 @@ img.bg {
 /* ------------------------------------- page seasons -------------------------------------  */
 .right-shape {
 	width: 530px;
+    height: 635px;
 	position: absolute;
 	top: 0;
 	right: -40px;
@@ -494,19 +495,67 @@ li::marker {
     justify-content: space-between;
 }
 
+.rgb-shape{
+    position: relative;
+}
+
+.rgb-shape img {
+    position: absolute;
+}
+
 
 .digital-images {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-
-    margin-left: -70px;
+    position: relative;
     padding: 25px 20px;
-    width: 90vw;
+    left: -68px;
+    top: -10px;
+    width: 1380px;
     height: 50vh;
-    margin-top: -25px;
 }
+
+.ph-digi {
+    position: absolute;
+    width: 195px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.digi {
+    position: absolute;
+    width: 220px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.digi-gray {
+    right: 20px;
+}
+
+.digi-bw {
+    right: 285px;
+}
+
+.digi-rgb {
+    left: 20px;
+}
+
+.digi-r {
+    right: 530px;
+    top: 105px;
+    z-index: 2;
+}
+
+.digi-g {
+    left: 455px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.digi-b {
+    left: 280px;
+    top: 235px;
+}
+
 
 img.BOLD-signal {
     position: absolute;
@@ -548,13 +597,9 @@ img.block-task {
     align-items: center;
 }
 
-.animation-container {
-    width: 550px;
-}
-
 
 .spatial {
-    margin-top: 150px;
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -562,6 +607,8 @@ img.block-task {
 /* ---------------------------------------------------------------------- */
 /* Animation style */
 .animation-container {
+    width: 550px;
+    height: 500px;
     position: relative;
     overflow: hidden; /* جلوگیری از خروج عناصر */
     background: white; /* پس‌زمینه سفید */

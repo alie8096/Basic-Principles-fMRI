@@ -238,16 +238,14 @@
                     <h3>Digital Image</h3>
                     <p>A digital image is data stored numerically and can be analyzed by a computer. In fMRI, digital images represent the level of blood oxygenation in various parts of the brain and are stored as matrices of numerical values, with each element of the matrix representing a pixel with a specific intensity.</p>
                     <div class="digital-images">
-                        <img src="./images/output_rgb.svg" alt="rgb" width="80%">
+                        <img src="./images/output_rgb.svg" alt="rgb" class="digi-rgb ph-digi">
 
-                        <div class="rgb-shape">
-                            <img src="./images/output_red.svg" alt="red" width="45%">
-                            <img src="./images/output_green.svg" alt="green" width="45%">
-                            <img src="./images/output_blue.svg" alt="blue" width="45%">
-                        </div>
+                        <img src="./images/output_red.svg" alt="red" class="digi-r digi">
+                        <img src="./images/output_green.svg" alt="green" class="digi-g digi">
+                        <img src="./images/output_blue.svg" alt="blue" class="digi-b digi">
 
-                        <img src="./images/output_black_white.svg" alt="bw" width="80%">
-                        <img src="./images/output.svg" alt="gray" width="80%">
+                        <img src="./images/output_black_white.svg" alt="bw" class="digi-bw ph-digi">
+                        <img src="./images/output.svg" alt="gray" class="digi-gray ph-digi">
                     </div>
 
                 </div>
@@ -486,15 +484,16 @@
                     <h2>Preprocessing</h2>
                     <h3>Slice Timing Correction</h3>
                     <p>Correcting timing differences between different slices to ensure data consistency. This step improves the temporal accuracy of the data by adjusting for timing differences in recording brain signals.</p>
+
                     <!-- Slice Timing Correction Animation -->
                     <div class="animation-container" id="slice-timing-correction-container">
                         <button id="play-button-slice-timing-correction" class="play-button">▶️</button>
                         <svg width="100%" height="100%">
-                        <!-- محورهای X و Y -->
-                        <line x1="40" y1="260" x2="560" y2="260" class="axis" />
-                        <line x1="40" y1="260" x2="40" y2="40" class="axis" />
-                        <text x="300" y="280" text-anchor="middle">Time</text> <!-- برچسب محور زمان -->
-                        <text x="20" y="150" text-anchor="middle" transform="rotate(-90,20,150)">Intensity</text> 
+                            <!-- محورهای X و Y -->
+                            <line x1="40" y1="260" x2="560" y2="260" class="axis" />
+                            <line x1="40" y1="260" x2="40" y2="40" class="axis" />
+                            <text x="300" y="280" text-anchor="middle">Time</text> <!-- برچسب محور زمان -->
+                            <text x="20" y="150" text-anchor="middle" transform="rotate(-90,20,150)">Intensity</text> 
                         </svg>
                         <!-- اسلایس‌ها -->
                         <img id="slice-timing-correction-1" class="slice-timing-correction" style="top: 10%; left: 10%;" src="./images/Slice-timing-correction-slice1.svg" alt="Slice 1" />
@@ -503,7 +502,7 @@
                         <img id="slice-timing-correction-4" class="slice-timing-correction" style="top: 18%; left: 25%;" src="./images/Slice-timing-correction-slice4.svg" alt="Slice 4" />
                         <img id="slice-timing-correction-5" class="slice-timing-correction" style="top: 14%; left: 30%;" src="./images/Slice-timing-correction-slice5.svg" alt="Slice 5" />
                         <img id="slice-timing-correction-6" class="slice-timing-correction" style="top: 20%; left: 35%;" src="./images/Slice-timing-correction-slice6.svg" alt="Slice 6" />
-                    </div>
+                    </div>                        
                 </div>
             </div>
 
@@ -516,32 +515,33 @@
                     <div class="spatial">
                         <!-- Single Smoothing Animation -->
                         <div class="animation-container" id="single-smoothing-container">
-                            <svg width="100%" height="100%">
-                                <!-- محورهای X و Y -->
-                                <line x1="40" y1="260" x2="560" y2="260" class="axis" />
-                                <line x1="40" y1="260" x2="40" y2="40" class="axis" />
-                                <text x="300" y="280" text-anchor="middle">Time</text> <!-- برچسب محور زمان -->
-                                <text x="20" y="150" text-anchor="middle" transform="rotate(-90,20,150)">Response</text> 
-                            </svg>
-                            <!-- نمودارهای قبل و بعد از هموارسازی -->
-                            <img id="single-before" class="chart before" style="top: -15%; left:6%" src="./images/smoothing-single.svg" />
-                            <img id="single-after" class="chart after" style="top: -15%; left:6%" src="./images/smoothing-single-smoothed.svg" />
-                            <button id="play-button-single-smoothing" class="play-button">▶️</button>
-                        </div>
+                        <svg width="100%" height="100%">
+                            <!-- محورهای X و Y -->
+                            <line x1="40" y1="260" x2="560" y2="260" class="axis" />
+                            <line x1="40" y1="260" x2="40" y2="40" class="axis" />
+                            <text x="300" y="280" text-anchor="middle">Time</text> <!-- برچسب محور زمان -->
+                            <text x="20" y="150" text-anchor="middle" transform="rotate(-90,20,150)">Response</text> 
+                        </svg>
+                        <!-- نمودارهای قبل و بعد از هموارسازی -->
+                        <img id="single-before" class="chart before" style="top: -15%; left:6%" src="./images/smoothing-single.svg" />
+                        <img id="single-after" class="chart after" style="top: -15%; left:6%" src="./images/smoothing-single-smoothed.svg" />
+                        <button id="play-button-single-smoothing" class="play-button">▶️</button>
+                        </div>                        
+
                         <!-- Group Smoothing Animation -->
                         <div class="animation-container" id="group-smoothing-container">
-                            <svg width="100%" height="100%">
-                                <!-- محورهای X و Y -->
-                                <line x1="40" y1="260" x2="560" y2="260" class="axis" />
-                                <line x1="40" y1="260" x2="40" y2="40" class="axis" />
-                                <text x="300" y="280" text-anchor="middle">Time</text> <!-- برچسب محور زمان -->
-                                <text x="20" y="150" text-anchor="middle" transform="rotate(-90,20,150)">Response</text> 
-                            </svg>
-                            <!-- نمودارهای قبل و بعد از هموارسازی -->
-                            <img id="chart-before" class="chart before"  style="top: -15%; left:7%"  src="./images/smoothing-group.svg" />
-                            <img id="chart-after" class="chart after"  style="top: -15%; left:7%"  src="./images/smoothing-group-smoothed.svg" />
-                            <button id="play-button-group-smoothing" class="play-button">▶️</button>
-                        </div>
+                        <svg width="100%" height="100%">
+                            <!-- محورهای X و Y -->
+                            <line x1="40" y1="260" x2="560" y2="260" class="axis" />
+                            <line x1="40" y1="260" x2="40" y2="40" class="axis" />
+                            <text x="300" y="280" text-anchor="middle">Time</text> <!-- برچسب محور زمان -->
+                            <text x="20" y="150" text-anchor="middle" transform="rotate(-90,20,150)">Response</text> 
+                        </svg>
+                        <!-- نمودارهای قبل و بعد از هموارسازی -->
+                        <img id="chart-before" class="chart before"  style="top: -15%; left:7%"  src="./images/smoothing-group.svg" />
+                        <img id="chart-after" class="chart after"  style="top: -15%; left:7%"  src="./images/smoothing-group-smoothed.svg" />
+                        <button id="play-button-group-smoothing" class="play-button">▶️</button>
+                        </div>                        
                     </div> 
                 </div>
             </div>
@@ -635,16 +635,18 @@
         </footer>
     </div>
     
-    <script src="JS/rgb.js"></script>
+
     <script src="JS/app.js"></script>
-    <script src="JS/cmyk.js"></script>
-    <script src="JS/impulse.js"></script>
-    <script src="JS/nyquist.js"></script>
-    <script src="JS/rotation.js"></script>
-    <script src="JS/translation.js"></script>
-    <script src="JS/slice-timing.js"></script>
-    <script src="JS/group-smoothing.js"></script>
-    <script src="JS/Data-acquisition.js"></script>
-    <script src="JS/single-smoothing.js"></script>
+
+    <script src="./JS/rgb.js"></script>
+    <script src="./JS/cmyk.js"></script>
+    <script src="./JS/impulse.js"></script>
+    <script src="./JS/nyquist.js"></script>
+    <script src="./JS/rotation.js"></script>
+    <script src="./JS/translation.js"></script>
+    <script src="./JS/slice-timing.js"></script>
+    <script src="./JS/group-smoothing.js"></script>
+    <script src="./JS/Data-acquisition.js"></script>
+    <script src="./JS/single-smoothing.js"></script>
 </body>
 </html>
