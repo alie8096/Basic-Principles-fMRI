@@ -491,3 +491,89 @@ li::marker {
 	mask-position: 100px -10px;
 }
 
+
+/* Animation style */
+
+
+.animation-container {
+    position: relative;
+    width: 600px; /* عرض استاندارد */
+    height: 600px; /* ارتفاع استاندارد */
+    overflow: hidden; /* جلوگیری از خروج عناصر */
+    background: white; /* پس‌زمینه سفید */
+  }
+  
+  /* استایل دکمه‌های پلی */
+  .play-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background: #3498db; /* رنگ آبی */
+    color: white; /* متن سفید */
+    border-radius: 5px; /* لبه‌های گرد */
+    border: none; /* بدون حاشیه */
+    cursor: pointer;
+  }
+  
+  .play-button:disabled {
+    background: #95a5a6; /* رنگ خاکستری برای دکمه غیرفعال */
+    cursor: not-allowed; /* نشانگر غیرفعال */
+  }
+  
+  /* محورهای نمودار */
+  .axis {
+    stroke: black; 
+    stroke-width: 2px; 
+  }
+  
+  /* استایل برای اسلایس‌های مختلف */
+  .slice-timing-correction {
+    position: absolute;
+    width: 250px; /* اندازه استاندارد */
+    height: 120px;
+    transition: transform 1s ease-in-out; /* افکت جابجایی */
+  }
+  
+  /* استایل برای نمایش پس از تراز شدن مجدد */
+  .slice-timing-correction.realign {
+    transform: translateX(0); /* تنظیم جابجایی برای تراز شدن */
+  }
+  
+  
+  /* استایل اسلایس‌ها */
+  .slice {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    opacity: 0; /* محو */
+    transition: opacity 1s ease-in-out; /* افکت انتقال */
+  }
+  
+  .slice.active {
+    opacity: 1; /* نمایان شدن */
+  }
+  
+  
+  /* استایل برای نمودارهای مختلف */
+  .chart {
+    position: absolute;
+    width: 90%; /* عرض کاهش‌یافته */
+    height: 80%; /* ارتفاع کاهش‌یافته */
+    top: 10%;
+    left: 10%;
+    transition: opacity 2s ease-in-out; /* انتقال آهسته */
+  }
+  
+  .chart.before.dimmed {
+    opacity: 0.3; /* کاهش شفافیت */
+  }
+  
+  .chart.after {
+    clip-path: inset(0 100% 0 0); /* محدودیت موقعیت */
+    transition: clip-path 4s ease-in-out; /* انتقال با افکت */
+  }
+  
+  .chart.after.shown {
+    clip-path: inset(0 0 0 0); /* کاملاً نمایان شدن */
+  }

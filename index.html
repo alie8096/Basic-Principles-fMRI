@@ -17,7 +17,7 @@
 
     <div class="container">
         <main>            
-            <!-- اسلاید ۰ --> 
+            <!-- اسلاید 0 --> 
             <div id="slide0" class="slide active">
                 <div class="background"></div>
                 <div class="main-brain-mask">
@@ -52,7 +52,7 @@
             
             
 
-            <!-- اسلاید 3 -->
+            <!-- اسلاید 2 -->
             <div id="slide2" class="slide">
                 <div class="season-content">
                     <div class="application-mask">
@@ -69,7 +69,7 @@
 
 
 
-            <!-- اسلاید 4 -->
+            <!-- اسلاید 3 -->
             <div id="slide3" class="slide">
                 <div class="information-content">
                     <h2>Applications</h2>
@@ -86,7 +86,7 @@
             </div>
 
 
-            <!-- اسلاید 5 -->
+            <!-- اسلاید 4 -->
             <div id="slide4" class="slide">
                 <div class="information-content">
                     <h2>Applications</h2>
@@ -200,6 +200,8 @@
                     <h2>Basic Concepts</h2>
                     <h3>2D and 3D Imaging</h3>
                     <p>In fMRI, brain images are typically collected as 2D slices and then reconstructed into 3D images to provide a comprehensive view of brain activity. These 3D images facilitate more detailed and comprehensive study of the brain.</p>
+                    <img src="./images/slicetiming-all-voxel.jpeg" alt="all voxel">
+                    <img src="#" alt="2D">
                 </div>
             </div>
 
@@ -209,6 +211,17 @@
                     <h2>Basic Concepts</h2>
                     <h3>Color</h3>
                     <p>Different color modes are used to display fMRI images. Common modes include RGB (Red, Green, Blue) and grayscale. Heat maps are also used to display the intensity of brain activity, where areas with higher activity are shown in warmer colors (such as red and yellow), and areas with lower activity are shown in cooler colors (such as blue).</p>
+                    <!-- CMYK Animation -->
+                    <div class="animation-container" id="cmyk-container">
+                        <canvas id="cmyk-canvas"></canvas>
+                        <button id="play-button-cmyk" class="play-button">▶️</button>
+                    </div>
+
+                    <!-- RGB Animation -->
+                    <div class="animation-container" id="rgb-container">
+                        <canvas id="rgb-canvas"></canvas>
+                        <button id="play-button-rgb" class="play-button">▶️</button>
+                    </div>
                     </div>
             </div>
 
@@ -234,6 +247,11 @@
                     <h2>Basic Concepts</h2>
                     <h3>Hemodynamic Response Function (HRF)</h3>
                     <p>The Hemodynamic Response Function (HRF) describes how the brain responds to stimuli. HRF represents changes in the BOLD signal over time and is used in task design and data analysis. HRF helps us understand how the hemodynamic response changes over time following neural activity, which is crucial for analyzing fMRI data.</p>
+                      <!-- Impulse Function Animation -->
+                    <div class="animation-container" id="impulse-container">
+                        <canvas id="impulse-canvas"></canvas>
+                        <button id="play-button-impulse" class="play-button">▶️</button>
+                    </div>
                 </div>
             </div>
 
@@ -243,6 +261,11 @@
                     <h2>Basic Concepts</h2>
                     <h3>Nyquist Frequency</h3>
                     <p>The Nyquist frequency is the minimum rate at which a signal can be sampled without introducing errors. In fMRI, ensuring this frequency is critical to avoid artifacts caused by improper sampling. According to the Nyquist theorem, the sampling rate should be at least twice the highest frequency present in the signal to reconstruct the signal accurately.</p>
+                      <!-- NِِY-Quist Frequency Animation -->
+                    <div class="animation-container" id="nyquist-container">
+                        <canvas id="nyquist-canvas"></canvas>
+                        <button id="play-button-nyquist" class="play-button">▶️</button>
+                    </div>
                 </div>
             </div>
 
@@ -262,6 +285,25 @@
                     <h2>Basic Concepts</h2>
                     <h3>Data Collection from the Brain</h3>
                     <p>fMRI data collection is performed using an MRI scanner, which creates a strong magnetic field around the head. This process involves setting up the MRI machine, planning, and executing tasks to capture the BOLD signal. Tasks can include various activities aimed at stimulating specific brain regions to observe hemodynamic responses.</p>
+                      <!-- Data Acquisition Animation -->
+                    <div class="animation-container" id="fmri-container">
+                        <button id="play-button-fmri" class="play-button">▶️</button>
+                        <svg width="600" height="300">
+                        <line x1="40" y1="260" x2="560" y2="260" class="axis" /> <!-- محور افقی -->
+                        <line x1="40" y1="260" x2="40" y2="40" class="axis" /> <!-- محور عمودی -->
+                        <text x="300" y="280" text-anchor="middle">Time</text>
+                        <text x="20" y="150" text-anchor="middle" transform="rotate(-90,20,150)">Numbers Of Slice</text>
+                        </svg>
+                        <!-- اسلایس‌ها -->
+                        <div>
+                            <img id="slice1" class="slice" style="top: 200px; left: 40px;" src="slice1.svg" alt="Slice 1" />
+                            <img id="slice3" class="slice" style="top: 160px; left: 120px;" src="slice3.svg" alt="Slice 3" />
+                            <img id="slice5" class="slice" style="top: 120px; left: 200px;" src="slice5.svg" alt="Slice 5" />
+                            <img id="slice2" class="slice" style="top: 180px; left: 280px;" src="slice2.svg" alt="Slice 2" />
+                            <img id="slice4" class="slice" style="top: 140px; left: 360px;" src="slice4.svg" alt="Slice 4" />
+                            <img id="slice6" class="slice" style="top: 100px; left: 440px;" src="slice6.svg" alt="Slice 6" />
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -403,6 +445,17 @@
                             <p><span>Translation:</span> Correcting for head or body translations. These corrections are made using image alignment algorithms to remove unwanted movements.</p>
                         </li>
                     </ul>
+                    <!-- Motion Correction Rotation Animation -->
+                    <div class="animation-container" id="rotation-container">
+                        <canvas id="rotation-canvas"></canvas>
+                        <button id="play-button-rotation" class="play-button">▶️</button>
+                    </div>
+
+                    <!-- Motion Correction Translation Animation -->
+                    <div class="animation-container" id="translation-container">
+                        <canvas id="translation-canvas"></canvas>
+                        <button id="play-button-translation" class="play-button">▶️</button>
+                    </div>
                 </div>
             </div>
 
@@ -412,6 +465,24 @@
                     <h2>Preprocessing</h2>
                     <h3>Slice Timing Correction</h3>
                     <p>Correcting timing differences between different slices to ensure data consistency. This step improves the temporal accuracy of the data by adjusting for timing differences in recording brain signals.</p>
+                    <!-- Slice Timing Correction Animation -->
+                    <div class="animation-container" id="slice-timing-correction-container">
+                        <button id="play-button-slice-timing-correction" class="play-button">▶️</button>
+                        <svg width="100%" height="100%">
+                        <!-- محورهای X و Y -->
+                        <line x1="40" y1="260" x2="560" y2="260" class="axis" />
+                        <line x1="40" y1="260" x2="40" y2="40" class="axis" />
+                        <text x="300" y="280" text-anchor="middle">Time</text> <!-- برچسب محور زمان -->
+                        <text x="20" y="150" text-anchor="middle" transform="rotate(-90,20,150)">Intensity</text> 
+                        </svg>
+                        <!-- اسلایس‌ها -->
+                        <img id="slice-timing-correction-1" class="slice-timing-correction" style="top: 10%; left: 10%;" src="./images/Slice-timing-correction-slice1.svg" alt="Slice 1" />
+                        <img id="slice-timing-correction-2" class="slice-timing-correction" style="top: 16%; left: 15%;" src="./images/Slice-timing-correction-slice2.svg" alt="Slice 2" />
+                        <img id="slice-timing-correction-3" class="slice-timing-correction" style="top: 12%; left: 20%;" src="./images/Slice-timing-correction-slice3.svg" alt="Slice 3" />
+                        <img id="slice-timing-correction-4" class="slice-timing-correction" style="top: 18%; left: 25%;" src="./images/Slice-timing-correction-slice4.svg" alt="Slice 4" />
+                        <img id="slice-timing-correction-5" class="slice-timing-correction" style="top: 14%; left: 30%;" src="./images/Slice-timing-correction-slice5.svg" alt="Slice 5" />
+                        <img id="slice-timing-correction-6" class="slice-timing-correction" style="top: 20%; left: 35%;" src="./images/Slice-timing-correction-slice6.svg" alt="Slice 6" />
+                    </div>
                 </div>
             </div>
 
@@ -421,6 +492,34 @@
                     <h2>Preprocessing</h2>
                     <h3>Spatial Smoothing</h3>
                     <p>Increasing the signal-to-noise ratio by smoothing the data. This is done using spatial filters that average the intensities of neighboring points.</p>
+                     <!-- Single Smoothing Animation -->
+                    <div class="animation-container" id="single-smoothing-container">
+                        <svg width="100%" height="100%">
+                            <!-- محورهای X و Y -->
+                            <line x1="40" y1="260" x2="560" y2="260" class="axis" />
+                            <line x1="40" y1="260" x2="40" y2="40" class="axis" />
+                            <text x="300" y="280" text-anchor="middle">Time</text> <!-- برچسب محور زمان -->
+                            <text x="20" y="150" text-anchor="middle" transform="rotate(-90,20,150)">Response</text> 
+                        </svg>
+                        <!-- نمودارهای قبل و بعد از هموارسازی -->
+                        <img id="single-before" class="chart before" style="top: -15%; left:6%" src="./images/smoothing-single.svg" />
+                        <img id="single-after" class="chart after" style="top: -15%; left:6%" src="./images/smoothing-single-smoothed.svg" />
+                        <button id="play-button-single-smoothing" class="play-button">▶️</button>
+                    </div>
+                    <!-- Group Smoothing Animation -->
+                    <div class="animation-container" id="group-smoothing-container">
+                        <svg width="100%" height="100%">
+                            <!-- محورهای X و Y -->
+                            <line x1="40" y1="260" x2="560" y2="260" class="axis" />
+                            <line x1="40" y1="260" x2="40" y2="40" class="axis" />
+                            <text x="300" y="280" text-anchor="middle">Time</text> <!-- برچسب محور زمان -->
+                            <text x="20" y="150" text-anchor="middle" transform="rotate(-90,20,150)">Response</text> 
+                        </svg>
+                        <!-- نمودارهای قبل و بعد از هموارسازی -->
+                        <img id="chart-before" class="chart before"  style="top: -15%; left:7%"  src="./images/smoothing-group.svg" />
+                        <img id="chart-after" class="chart after"  style="top: -15%; left:7%"  src="./images/smoothing-group-smoothed.svg" />
+                        <button id="play-button-group-smoothing" class="play-button">▶️</button>
+                    </div>
                 </div>
             </div>
 
@@ -514,5 +613,15 @@
     </div>
     
     <script src="app.js"></script>
+    <script src="rgb.js"></script>
+    <script src="cmyk.js"></script>
+    <script src="impulse.js"></script>
+    <script src="nyquist.js"></script>
+    <script src="rotation.js"></script>
+    <script src="translation.js"></script>
+    <script src="slice-timing.js"></script>
+    <script src="group-smoothing.js"></script>
+    <script src="Data-acquisition.js"></script>
+    <script src="single-smoothing.js"></script>
 </body>
 </html>
