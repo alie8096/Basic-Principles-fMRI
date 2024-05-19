@@ -73,7 +73,7 @@ function updateFooter() {
         const leadingZeroes = Array(totalPages.toString().length - currentPage.toString().length).fill('0').join('');
         currentPage = leadingZeroes + currentPage;
     }
-    pageNumber.textContent = (totalPages - 1) + " / " + currentPage;
+    pageNumber.textContent = currentPage + " / " + (totalPages - 1);
 }
 
 
@@ -84,4 +84,53 @@ function checkShowablity(slide) {
         document.querySelector("footer").style.display = "flex";
     }
 }
+
+//  --------------------------------------------------------------------
+let mySlides = document.querySelectorAll('.slide');
+mySlides.forEach((slide, idx) => {
+    console.log(slide, idx);
+    slide.id = `slide${idx}`;
+})
+
+let slides = document.querySelectorAll('.slide');
+
+let seasonsIds = ['slide2', 'slide6', 'slide9', 'slide19', 'slide22', 'slide31', 'slide34'];
+
+let first = `
+<div class="theme">
+    <div class="shape">
+        <img src="./images/page-one/Artboard 1.png" alt="shape" class="bg">
+    </div>				
+</div>
+`
+
+let season = `		
+    <div class="temp">
+        <img src="images/season-topic/Artboard 5.png" alt="" class="right-shape">
+        <img src="images/season-topic/Artboard 4.png" alt="" class="mask">
+        <img src="images/season-topic/Artboard 2.png" alt="" class="circle">
+        <img src="images/season-topic/Artboard 3.png" alt="" class="left-shape">
+    </div>`
+
+let info = `		
+    <div class="header">
+        <img src="./images/info-template/Artboard 1.png" alt="header">
+    </div>`
+
+
+
+slides.forEach(slide => {
+    if (slide.id === 'slide0') {
+        slide.insertAdjacentHTML('afterbegin', first);
+    }
+
+    else if (seasonsIds.includes(slide.id)){
+        slide.insertAdjacentHTML('afterbegin', season);
+    }
+    
+    else {
+        slide.insertAdjacentHTML('afterbegin', info);
+    }
+})
+
 
