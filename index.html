@@ -200,8 +200,11 @@
                     <h2>Basic Concepts</h2>
                     <h3>2D and 3D Imaging</h3>
                     <p>In fMRI, brain images are typically collected as 2D slices and then reconstructed into 3D images to provide a comprehensive view of brain activity. These 3D images facilitate more detailed and comprehensive study of the brain.</p>
-                    <img src="./images/slicetiming-all-voxel.jpeg" alt="all voxel">
-                    <img src="#" alt="2D">
+                    <div class="image-2d-3d">
+                        <img src="./images/slicetiming-all-voxel.jpeg" alt="all voxel" width="35%">
+                        <img src="#" alt="2D" width="35%">
+                    </div>
+
                 </div>
             </div>
 
@@ -211,18 +214,20 @@
                     <h2>Basic Concepts</h2>
                     <h3>Color</h3>
                     <p>Different color modes are used to display fMRI images. Common modes include RGB (Red, Green, Blue) and grayscale. Heat maps are also used to display the intensity of brain activity, where areas with higher activity are shown in warmer colors (such as red and yellow), and areas with lower activity are shown in cooler colors (such as blue).</p>
-                    <!-- CMYK Animation -->
-                    <div class="animation-container" id="cmyk-container">
-                        <canvas id="cmyk-canvas"></canvas>
-                        <button id="play-button-cmyk" class="play-button">▶️</button>
-                    </div>
+                    <div class="color-animation">
+                        <!-- CMYK Animation -->
+                        <div class="animation-container" id="cmyk-container">
+                            <canvas id="cmyk-canvas"></canvas>
+                            <button id="play-button-cmyk" class="play-button">▶️</button>
+                        </div>
 
-                    <!-- RGB Animation -->
-                    <div class="animation-container" id="rgb-container">
-                        <canvas id="rgb-canvas"></canvas>
-                        <button id="play-button-rgb" class="play-button">▶️</button>
+                        <!-- RGB Animation -->
+                        <div class="animation-container" id="rgb-container">
+                            <canvas id="rgb-canvas"></canvas>
+                            <button id="play-button-rgb" class="play-button">▶️</button>
+                        </div>
                     </div>
-                    </div>
+                </div>
             </div>
 
             <!-- اسلاید 12 -->

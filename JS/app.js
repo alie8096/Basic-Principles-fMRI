@@ -114,7 +114,7 @@ let season = `
 
 let info = `		
     <div class="header">
-        <img src="./images/info-template/Artboard 1.png" alt="header">
+        <img src="./images/info-template/info-template.png" alt="header">
     </div>`
 
 

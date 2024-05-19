@@ -2,19 +2,19 @@ const cmykCanvas = document.getElementById('cmyk-canvas');
 const ctxCMYK = cmykCanvas.getContext('2d'); // دریافت زمینه کانواس
 
 const cmykWidth = cmykCanvas.width = 600; // عرض کانواس
-const cmykHeight = cmykCanvas.height = 600; // ارتفاع کانواس
+const cmykHeight = cmykCanvas.height = 340; // ارتفاع کانواس
 
-const cmykRadius = 100; // شعاع دایره‌ها
+const cmykRadius = 60; // شعاع دایره‌ها
 const cmykInitialPositions = [ 
-  { x: 100, y: 200 }, // دایره فیروزه‌ای (Cyan)
-  { x: 500, y: 200 }, // دایره سرخابی (Magenta)
-  { x: 300, y: 500 }  // دایره زرد (Yellow)
+  { x: 150, y: 70 }, // دایره فیروزه‌ای (Cyan)
+  { x: 450, y: 70 }, // دایره سرخابی (Magenta)
+  { x: 300, y: 250 }  // دایره زرد (Yellow)
 ];
 
 const cmykFinalPositions = [ 
-  { x: 250, y: 250 }, // موقعیت نهایی برای فیروزه‌ای
-  { x: 350, y: 250 }, // موقعیت نهایی برای سرخابی
-  { x: 300, y: 350 }  // موقعیت نهایی برای زرد
+  { x: 260, y: 135 }, // موقعیت نهایی برای فیروزه‌ای
+  { x: 340, y: 135 }, // موقعیت نهایی برای سرخابی
+  { x: 300, y: 200 }  // موقعیت نهایی برای زرد
 ];
 
 const cmykDuration = 3000; // مدت زمان انیمیشن

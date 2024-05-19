@@ -505,6 +505,26 @@ li::marker {
 }
 
 
+/* ----------------------------------------------- */
+.image-2d-3d{
+    margin: 10px auto;
+    padding: 8px 15px;
+    width: 90%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.color-animation {
+    margin-top: -25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
 /* Animation style */
 
 
