@@ -86,22 +86,21 @@ function checkShowablity(slide) {
 }
 
 //  --------------------------------------------------------------------
-let mySlides = document.querySelectorAll('.slide');
-mySlides.forEach((slide, idx) => {
-    console.log(slide, idx);
-    slide.id = `slide${idx}`;
-})
+// // for write id automatic
+// let mySlides = document.querySelectorAll('.slide');
+// mySlides.forEach((slide, idx) => {
+//     console.log(slide, idx);
+//     slide.id = `slide${idx}`;
+// })
 
 let slides = document.querySelectorAll('.slide');
 
 let seasonsIds = ['slide2', 'slide6', 'slide9', 'slide19', 'slide22', 'slide31', 'slide34'];
 
 let first = `
-<div class="theme">
-    <div class="shape">
-        <img src="./images/page-one/Artboard 1.png" alt="shape" class="bg">
-    </div>				
-</div>
+<div class="shape">
+    <img src="./images/page-one/Artboard 1.png" alt="shape" class="bg">
+</div>				
 `
 
 let season = `		

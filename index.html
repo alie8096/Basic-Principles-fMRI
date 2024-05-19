@@ -20,6 +20,7 @@
             <!-- اسلاید 0 --> 
             <div id="slide0" class="slide active">
                 <div class="background"></div>
+                
                 <div class="main-brain-mask">
                     <img src="./images/main-brain-mask.jpg" alt="main-brain-mask" width="100%">
                 </div>
@@ -440,9 +441,11 @@
                     <h2>Preprocessing</h2>
                     <h3>Quality Check (Removal of First Few Volumes)</h3>
                     <p>Removing initial volumes to eliminate unstable signals at the beginning of the scan. This step helps improve the quality of fMRI data.</p>
-                    <img src="./images/artifact1.jpeg" alt="artifact" width="90px">
-                    <img src="./images/artifact2.jpeg" alt="artifact" width="90px">
-                    <img src="./images/artifact3.jpeg" alt="artifact" width="90px">
+                    <div class="quality">
+                        <img src="./images/artifact1.jpeg" alt="artifact" height="100%">
+                        <img src="./images/artifact2.jpeg" alt="artifact" height="100%">
+                        <img src="./images/artifact3.jpeg" alt="artifact" height="100%">
+                    </div>
                 </div>
             </div>
 
@@ -460,16 +463,19 @@
                             <p><span>Translation:</span> Correcting for head or body translations. These corrections are made using image alignment algorithms to remove unwanted movements.</p>
                         </li>
                     </ul>
-                    <!-- Motion Correction Rotation Animation -->
-                    <div class="animation-container" id="rotation-container">
-                        <canvas id="rotation-canvas"></canvas>
-                        <button id="play-button-rotation" class="play-button">▶️</button>
-                    </div>
 
-                    <!-- Motion Correction Translation Animation -->
-                    <div class="animation-container" id="translation-container">
-                        <canvas id="translation-canvas"></canvas>
-                        <button id="play-button-translation" class="play-button">▶️</button>
+                    <div class="motion-correction">
+                        <!-- Motion Correction Rotation Animation -->
+                        <div class="animation-container" id="rotation-container">
+                            <canvas id="rotation-canvas"></canvas>
+                            <button id="play-button-rotation" class="play-button">▶️</button>
+                        </div>
+    
+                        <!-- Motion Correction Translation Animation -->
+                        <div class="animation-container" id="translation-container">
+                            <canvas id="translation-canvas"></canvas>
+                            <button id="play-button-translation" class="play-button">▶️</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -507,34 +513,36 @@
                     <h2>Preprocessing</h2>
                     <h3>Spatial Smoothing</h3>
                     <p>Increasing the signal-to-noise ratio by smoothing the data. This is done using spatial filters that average the intensities of neighboring points.</p>
-                     <!-- Single Smoothing Animation -->
-                    <div class="animation-container" id="single-smoothing-container">
-                        <svg width="100%" height="100%">
-                            <!-- محورهای X و Y -->
-                            <line x1="40" y1="260" x2="560" y2="260" class="axis" />
-                            <line x1="40" y1="260" x2="40" y2="40" class="axis" />
-                            <text x="300" y="280" text-anchor="middle">Time</text> <!-- برچسب محور زمان -->
-                            <text x="20" y="150" text-anchor="middle" transform="rotate(-90,20,150)">Response</text> 
-                        </svg>
-                        <!-- نمودارهای قبل و بعد از هموارسازی -->
-                        <img id="single-before" class="chart before" style="top: -15%; left:6%" src="./images/smoothing-single.svg" />
-                        <img id="single-after" class="chart after" style="top: -15%; left:6%" src="./images/smoothing-single-smoothed.svg" />
-                        <button id="play-button-single-smoothing" class="play-button">▶️</button>
-                    </div>
-                    <!-- Group Smoothing Animation -->
-                    <div class="animation-container" id="group-smoothing-container">
-                        <svg width="100%" height="100%">
-                            <!-- محورهای X و Y -->
-                            <line x1="40" y1="260" x2="560" y2="260" class="axis" />
-                            <line x1="40" y1="260" x2="40" y2="40" class="axis" />
-                            <text x="300" y="280" text-anchor="middle">Time</text> <!-- برچسب محور زمان -->
-                            <text x="20" y="150" text-anchor="middle" transform="rotate(-90,20,150)">Response</text> 
-                        </svg>
-                        <!-- نمودارهای قبل و بعد از هموارسازی -->
-                        <img id="chart-before" class="chart before"  style="top: -15%; left:7%"  src="./images/smoothing-group.svg" />
-                        <img id="chart-after" class="chart after"  style="top: -15%; left:7%"  src="./images/smoothing-group-smoothed.svg" />
-                        <button id="play-button-group-smoothing" class="play-button">▶️</button>
-                    </div>
+                    <div class="spatial">
+                        <!-- Single Smoothing Animation -->
+                        <div class="animation-container" id="single-smoothing-container">
+                            <svg width="100%" height="100%">
+                                <!-- محورهای X و Y -->
+                                <line x1="40" y1="260" x2="560" y2="260" class="axis" />
+                                <line x1="40" y1="260" x2="40" y2="40" class="axis" />
+                                <text x="300" y="280" text-anchor="middle">Time</text> <!-- برچسب محور زمان -->
+                                <text x="20" y="150" text-anchor="middle" transform="rotate(-90,20,150)">Response</text> 
+                            </svg>
+                            <!-- نمودارهای قبل و بعد از هموارسازی -->
+                            <img id="single-before" class="chart before" style="top: -15%; left:6%" src="./images/smoothing-single.svg" />
+                            <img id="single-after" class="chart after" style="top: -15%; left:6%" src="./images/smoothing-single-smoothed.svg" />
+                            <button id="play-button-single-smoothing" class="play-button">▶️</button>
+                        </div>
+                        <!-- Group Smoothing Animation -->
+                        <div class="animation-container" id="group-smoothing-container">
+                            <svg width="100%" height="100%">
+                                <!-- محورهای X و Y -->
+                                <line x1="40" y1="260" x2="560" y2="260" class="axis" />
+                                <line x1="40" y1="260" x2="40" y2="40" class="axis" />
+                                <text x="300" y="280" text-anchor="middle">Time</text> <!-- برچسب محور زمان -->
+                                <text x="20" y="150" text-anchor="middle" transform="rotate(-90,20,150)">Response</text> 
+                            </svg>
+                            <!-- نمودارهای قبل و بعد از هموارسازی -->
+                            <img id="chart-before" class="chart before"  style="top: -15%; left:7%"  src="./images/smoothing-group.svg" />
+                            <img id="chart-after" class="chart after"  style="top: -15%; left:7%"  src="./images/smoothing-group-smoothed.svg" />
+                            <button id="play-button-group-smoothing" class="play-button">▶️</button>
+                        </div>
+                    </div> 
                 </div>
             </div>
 
