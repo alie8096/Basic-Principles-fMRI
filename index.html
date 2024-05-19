@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> تصویربرداری fMRI</title>
+    <title> Basic Principles fMRI</title>
     <link rel="icon" href="./images/logo.svg" type="image/svg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -203,7 +203,7 @@
                     <p>In fMRI, brain images are typically collected as 2D slices and then reconstructed into 3D images to provide a comprehensive view of brain activity. These 3D images facilitate more detailed and comprehensive study of the brain.</p>
                     <div class="image-2d-3d">
                         <img src="./images/slicetiming-all-voxel.jpeg" alt="all voxel" width="35%">
-                        <img src="#" alt="2D" width="35%">
+                        <img src="./images/slice1.svg" alt="2D" width="35%">
                     </div>
 
                 </div>
@@ -288,6 +288,7 @@
                     <h3>fMRI Signal</h3>
                     <p>The BOLD (Blood Oxygen Level Dependent) signal forms the basis of fMRI. When a brain region is active, blood flow and oxygenation levels in that region increase. These changes lead to differences in magnetic signals captured by the MRI scanner. These signals are stored as image data and then analyzed to interpret brain activity.</p>
                     <img src="./images/BOLD-signal.svg" alt="BOLD signal" class="BOLD-signal">
+                    <img src="./images/resting-and-activated.jpeg" alt="resting and  active">
                 </div>
             </div>
 
@@ -355,6 +356,9 @@
                             <p><span>Structural:</span> Shows the overall structures of the brain and serves as a reference for other analyses. These high-resolution structural images aid in identifying and aligning different brain regions.</p>
                         </li>
                     </ul>
+                    <img src="./images/localizer.jpg" alt="localizer">
+                    <img src="./images/epi.jpg" alt="EPI">
+                    <img src="./images/structural.jpg" alt="Structural">
                 </div>
             </div>
 
@@ -552,6 +556,7 @@
                     <h2>Preprocessing</h2>
                     <h3>Temporal Filtering</h3>
                     <p>Removing noise and unrelated signals using temporal filters. These filters remove high-frequency noise and emphasize significant signals.</p>
+                    <img src="./images/temporal.jpg" alt="temporal filtering">
                 </div>
             </div>
 
@@ -595,6 +600,7 @@
                     <h2>Data Processing</h2>
                     <h3>General Linear Model (GLM)</h3>
                     <p>Using the General Linear Model to analyze fMRI data and identify active brain regions. This model helps analyze the correlation between brain activity and the tasks presented to subjects.</p>
+                    <img src="./images/GLM.png" alt="gml">
                 </div>
             </div>
 
@@ -604,6 +610,8 @@
                     <h2>Data Processing</h2>
                     <h3>Clustering</h3>
                     <p>Grouping data to identify patterns and correlated brain regions. This method helps identify clusters of brain activity and analyze spatial and temporal correlations.</p>
+                    <img src="./images/clustering.jpg" alt="clustering">
+                    <img src="./images/hierarchical-fmri.jpg" alt="hierarchical">
                 </div>
             </div>
 
@@ -626,12 +634,14 @@
                     <h2>Statistical Inference</h2>
                     <h3>Statistical Inference and Accuracy of Analysis</h3>
                     <p>Using statistical methods to analyze data and assess the validity and reliability of results. This includes statistical tests and random models to determine the significance of findings. Statistical analysis in fMRI aims to examine correlations, test hypotheses, and identify active brain regions based on recorded data.</p>
+
+                    <img src="./images/true-positive.png" alt="predict accuracy">
                 </div>
             </div>
         
         </main>
         <footer>
-            <p><span class="date">2024 March</span> <span class="fTitle">تصویر برداری fMRI</span> <span id="pageNumber" class="pageNumber"></span></p>   
+            <p><span class="date">2024 March</span> <span class="fTitle">Basic Principles fMRI</span> <span id="pageNumber" class="pageNumber"></span></p>   
         </footer>
     </div>
     
