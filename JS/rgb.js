@@ -2,19 +2,19 @@ const rgbCanvas = document.getElementById('rgb-canvas'); // کانواس RGB
 const ctxRGB = rgbCanvas.getContext('2d'); // زمینه کانواس
 
 const rgbWidth = rgbCanvas.width = 600; // عرض کانواس
-const rgbHeight = rgbCanvas.height = 600; // ارتفاع کانواس
+const rgbHeight = rgbCanvas.height = 340; // ارتفاع کانواس
 
-const rgbRadius = 100; // شعاع دایره‌ها
+const rgbRadius = 60; // شعاع دایره‌ها
 const initialRGBPositions = [ // موقعیت اولیه دایره‌ها
-  { x: 100, y: 200 }, // دایره قرمز (Red)
-  { x: 500, y: 200 }, // دایره سبز (Green)
-  { x: 300, y: 500 }  // دایره آبی (Blue)
+  { x: 150, y: 70 }, // دایره قرمز (Red)
+  { x: 450, y: 70 }, // دایره سبز (Green)
+  { x: 300, y: 250 }  // دایره آبی (Blue)
 ];
 
 const finalRGBPositions = [ // موقعیت نهایی دایره‌ها
-  { x: 250, y: 300 }, // دایره قرمز
-  { x: 350, y: 300 }, // دایره سبز
-  { x: 300, y: 400 }  // دایره آبی
+  { x: 260, y: 135 }, // دایره قرمز
+  { x: 340, y: 135 }, // دایره سبز
+  { x: 300, y: 200 }  // دایره آبی
 ];
 
 const rgbDuration = 3000; // مدت زمان انیمیشن

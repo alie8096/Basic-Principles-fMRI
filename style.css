@@ -207,38 +207,61 @@ td:first-child {
 
 /* -------------------------------------------------------- */
 /*-----------------------page 1-----------------------------*/
-.theme {
-	position: relative;
-	left: -770px;
-	top: 50%;
-	transform: translateY(-50%);
-	z-index: 5;
+div.background {
+    margin-top: -20px;
+    margin-left: -90px;
+    width: 1385px;
+    height: 665px;
+    background-image: url(./images/main-BG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.95;
+    position: relative;
+}
+
+div.background::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(-135deg, black 35%, transparent);
+    opacity: 0.65;
 }
 
 
 div.shape {
 	position: absolute;
-	left: 690px;
+	left: 0px;
 	top: 50%;
-	transform: translateY(-50%);
-}
-
-div.image {
-	left: 708px;
-	top: 8px;
+    transform: translateY(-50%);
+    z-index: 5;
 }
 
 img.bg {
 	width: 600px;
 }
 
-img.photo {
-	width: 560px;
-	/* mask: url("images/page-one/Artboard 2.png");
-	mask-repeat: no-repeat;
-	mask-size: 560px;
-	mask-position: -23px -8px; */
-}
+.main-brain-mask {
+    position: absolute;
+    z-index: 5;
+    top: 45px;
+    left: -25px;
+    width: 710px;
+
+    mask-image: url(./images/page-one/mask-brain.png);
+    mask-repeat: no-repeat;
+	mask-size: 561px;
+	mask-position: 43px -15px;
+
+    -webkit-mask-image: url(./images/page-one/mask-brain.png);
+    -webkit-mask-repeat: no-repeat;
+	-webkit-mask-size: 561px;
+	-webkit-mask-position: 43px -15px;
+} 
 
 
 .content {
@@ -256,17 +279,11 @@ img.photo {
 /* ------------------------------------- page seasons -------------------------------------  */
 .right-shape {
 	width: 530px;
+    height: 635px;
 	position: absolute;
 	top: 0;
 	right: -40px;
 	z-index: 5;
-}
-
-.mask {
-	position: absolute;
-	top: 50px;
-	width: 400px;
-	right: 45px;
 }
 
 .circle{
@@ -313,28 +330,16 @@ div.header {
     width: 90%;
 }
 
-/* ------------------------------------------------------------------------------------------------------- */
-.icon {
-    width: 150px;
+.short {
+    text-align: left;
     position: absolute;
-    top: 40px;
-    right: 40px;
+    top: 85px;
+
+    left: 5%;
+    width: 65%;
 }
 
-div.background {
-    margin-top: -20px;
-    margin-left: -90px;
-    width: 1385px;
-    height: 600px;
-    background-image: url(./images/main-BG.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.95;
-}
-
-
-
+/* ------------------------------------------------------------------------------------------------------- */
 span{
     font-size: 16px;
     font-weight: bold;
@@ -348,26 +353,7 @@ li::marker {
     color: rgb(0, 208, 255);
     font-size: 20px;
 }
-
-.main-brain-mask {
-    position: absolute;
-    z-index: 5;
-    top: 25px;
-    left: -20px;
-    width: 710px;
-
-    mask-image: url(./images/page-one/mask-brain.png);
-    mask-repeat: no-repeat;
-	mask-size: 561px;
-	mask-position: 43px -15px;
-
-    -webkit-mask-image: url(./images/page-one/mask-brain.png);
-    -webkit-mask-repeat: no-repeat;
-	-webkit-mask-size: 561px;
-	-webkit-mask-position: 43px -15px;
-} 
-
-
+/* ----------------------------------------------- masking ----------------------------------------------- */
 .application-mask{
     position: absolute;
     top: -100px;
@@ -491,14 +477,139 @@ li::marker {
 	mask-position: 100px -10px;
 }
 
+/* ----------------------------- style of picture and animations ----------------------------- */
+.image-2d-3d{
+    margin: 10px auto;
+    padding: 8px 15px;
+    width: 90%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
-/* Animation style */
+.color-animation {
+    margin-top: -25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-
-.animation-container {
+.rgb-shape{
     position: relative;
-    width: 600px; /* عرض استاندارد */
-    height: 600px; /* ارتفاع استاندارد */
+}
+
+.rgb-shape img {
+    position: absolute;
+}
+
+
+.digital-images {
+    position: relative;
+    padding: 25px 20px;
+    left: -68px;
+    top: -10px;
+    width: 1380px;
+    height: 50vh;
+}
+
+.ph-digi {
+    position: absolute;
+    width: 195px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.digi {
+    position: absolute;
+    width: 220px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.digi-gray {
+    right: 20px;
+}
+
+.digi-bw {
+    right: 285px;
+}
+
+.digi-rgb {
+    left: 20px;
+}
+
+.digi-r {
+    right: 530px;
+    top: 105px;
+    z-index: 2;
+}
+
+.digi-g {
+    left: 455px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.digi-b {
+    left: 280px;
+    top: 235px;
+}
+
+
+img.BOLD-signal {
+    position: absolute;
+    width: 400px;
+    top: 100px;
+}
+
+img.block-task {
+    width: 350px;
+    position: absolute;
+    right: -370px;
+    top: 50px;
+}
+
+
+.physic-mri {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+}
+
+
+.quality {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 340px;
+    gap: 10px;
+}
+
+.quality img {
+    border-radius: 15px;
+}
+
+.motion-correction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.spatial {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ---------------------------------------------------------------------- */
+/* Animation style */
+.animation-container {
+    width: 550px;
+    height: 500px;
+    position: relative;
     overflow: hidden; /* جلوگیری از خروج عناصر */
     background: white; /* پس‌زمینه سفید */
   }
