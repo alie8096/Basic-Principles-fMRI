@@ -1,610 +1,500 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> تصویربرداری fMRI</title>
+    <link rel="icon" href="./images/logo.svg" type="image/svg">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 </head>
 <body>
-    <img src="images/previous.png" alt="previous" class="previous arrow">
-    <img src="images/next.png" alt="next" class="next arrow">
+    <i class="fa-solid fa-circle-chevron-right next arrow"></i>
+    <i class="fa-solid fa-circle-chevron-left previous arrow"></i>
 
     <div class="container">
         <main>            
             <!-- اسلاید ۰ --> 
             <div id="slide0" class="slide active">
-                <h1 class="main-title">FMRI</h1>
-                <h2>تصویربرداری تشدید مغناطیسی عملکردی</h2>
-                <br><br><hr>
-                <h3>دکتر کریمزاده</h3>
-                <h4>علی ابراهیمیان</h4>
-                
-                
+                <div class="background"></div>
+                <div class="main-brain-mask">
+                    <img src="./images/main-brain-mask.jpg" alt="main-brain-mask" width="100%">
+                </div>
+				
+				<div class="content">
+					<h1 class="main-title">FMRI</h1>
+					<h2>Basic Principles of Imaging fMRI</h2>
+					<br><br><hr>
+					<h3>دکتر کریمزاده</h3>
+					<h4>علی ابراهیمیان</h4>				
+				</div>
+        
             </div>
             <!-- اسلاید ۱ -->
             <div id="slide1" class="slide">
-                <h2 class="slide-title">fMRI چیست؟</h2>
-                <h3 class="titre">مقدمه:</h3>
-                <p class="slide-content">
-                    تصویربرداری تشدید مغناطیسی عملکردی (fMRI) ابزاری قدرتمند برای مطالعه مغز انسان است. این روش از تغییرات در سیگنال‌های مغناطیسی برای اندازه‌گیری فعالیت‌های عصبی در مغز استفاده می‌کند. fMRI کاربردهای گسترده‌ای در زمینه‌های مختلف پزشکی، علوم اعصاب و روانشناسی دارد.
-                </p>
-                <h3 class="titre">تاریخچه:</h3>
-                <p class="slide-content">
-                    fMRI در دهه 1990 میلادی به عنوان یک روش تحقیقاتی نوظهور معرفی شد. از آن زمان، این روش به طور فزاینده‌ای در تحقیقات علوم اعصاب و پزشکی مورد استفاده قرار گرفته است.
-                </p>
-            </div>
+				<div class="information-content">
+					<h1>History</h1>
+                    <p>Functional Magnetic Resonance Imaging (fMRI) emerged in the early 1990s when researchers like Seiji Ogawa demonstrated that changes in blood oxygenation levels are associated with neural activity. This discovery paved the way for fMRI to become a crucial tool in brain research. Since then, fMRI has become an indispensable tool in neuroscience and medical research.</p>
+                    <br>
+                    <!-- <h1>Introduction</h1> -->
+                    <h2>The Working Principle of fMRI</h2>
+                    <p>fMRI is based on the magnetic properties of hemoglobin, the protein in blood that carries oxygen. When a brain area becomes active, it requires more oxygen. This increased demand for oxygen leads to increased blood flow to that area, resulting in a higher concentration of oxygenated hemoglobin.
 
-            <!-- اسلاید ۲ -->
-            <div id="slide2" class="slide">
-                <h2 class="slide-title">نحوه عملکرد:</h2>
-                <div class="slide-content">
-                    <h3 class="titre">عملکرد fMRI در یک نگاه:</h3>
-                    <p>
-                        fMRI بر اساس خاصیت مغناطیسی هموگلوبین است. هموگلوبین، اکسیژن را در خون حمل می‌کند. هنگامی که یک ناحیه از مغز فعال می‌شود، به اکسیژن بیشتری نیاز دارد. این افزایش در تقاضای اکسیژن، باعث افزایش جریان خون به آن ناحیه می‌شود. در نتیجه، هموگلوبین بیشتری در آن ناحیه وجود خواهد داشت.
-                    </p>
-                </div>
-                <div class="slide-content">
-                    <p>
-                        هموگلوبین دارای خاصیت مغناطیسی است. هنگامی که در معرض میدان مغناطیسی قرار می‌گیرد، سیگنال مغناطیسی ایجاد می‌کند. تغییرات در جریان خون و هموگلوبین، باعث تغییرات در سیگنال مغناطیسی می‌شود. این تغییرات توسط دستگاه fMRI ثبت و ضبط می‌شوند.
+                       Hemoglobin has magnetic properties that generate a magnetic signal when exposed to a magnetic field. Changes in blood flow and oxygenation cause variations in the magnetic signal, which are captured by the fMRI machine.
                     </p>
                 </div>
             </div>
             
-            <!-- اسلاید ۳ -->
+            
+
+            <!-- اسلاید 3 -->
             <div id="slide3" class="slide">
-                <h2 class="slide-title">کاربردها:</h2>
-                <div class="slide-content">
-                    <p>fMRI کاربردهای گسترده‌ای در زمینه‌های مختلف دارد، از جمله:</p>
-                    <h4 class="titre">تشخیص بیماری‌های مغزی:</h4>
-                    <p>
-                        fMRI می‌تواند برای تشخیص بیماری‌های مختلف مغزی مانند آلزایمر، پارکینسون، ام اس و سکته مغزی استفاده شود
-                    </p>
-                    <h4 class="titre">مطالعه عملکرد مغز:</h4>
-                    <p>
-                        fMRI می‌تواند برای مطالعه عملکرد مغز در وظایف مختلف مانند شناخت، حافظه، زبان و حرکت استفاده شود.
-                    </p>
-                    <h4 class="titre">درمان بیماری‌های مغزی:</h4>
-                    <p>
-                        fMRI می‌تواند برای توسعه درمان‌های جدید برای بیماری‌های مغزی استفاده شود.
-                    </p>
-                </div>
-                
-            </div>
-
-            <!-- اسلاید ۴ -->
-            <div id="slide1" class="slide">
-                <h2 class="slide-title">مزایا و معایب fMRI</h2>
-                <div class="slide-box-content">
-                    <div class="boxes-container">
-                        <div class="advantages-box">
-                            <h3 class="titre">مزایا</h3>
-                            <ul>
-                                <li>غیرتهاجمی: fMRI یک روش غیرتهاجمی است، به این معنی که نیازی به تماس مستقیم با مغز ندارد.</li>
-                                <li>دارای وضوح فضایی بالا: fMRI می‌تواند تصاویر با وضوح بالا از مغز را ارائه دهد.</li>
-                                <li>دارای وضوح زمانی بالا: fMRI می‌تواند تغییرات در فعالیت‌های مغزی را در طول زمان اندازه‌گیری کند.</li>
-                            </ul>
-                        </div>
-                        <div class="disadvantages-box">
-                            <h3 class="titre">معایب</h3>
-                            <ul>
-                                <li>هزینه بالا: fMRI یک روش نسبتاً پرهزینه است.</li>
-                                <li>زمان‌بر: انجام fMRI می‌تواند زمان‌بر باشد.</li>
-                                <li>محیط بسته: fMRI در یک محیط بسته انجام می‌شود که ممکن است برای برخی افراد claustrophobic باشد.</li>
-                                <li>وضوح فضایی محدود: وضوح فضایی تصاویر fMRI در مقایسه با سایر روش‌های تصویربرداری مانند میکروسکوپ الکترونی محدود است.</li>
-                                <li>وضوح زمانی محدود: وضوح زمانی تصاویر fMRI در مقایسه با سایر روش‌های تصویربرداری مانند الکتروانسفالوگرافی (EEG) محدود است.</li>
-                            </ul>
-                        </div>
+                <div class="season-content">
+                    <div class="application-mask">
+                        <img src="./images/application-mask.jpg" alt="application-mask" width="100%">
                     </div>
+                    <h1>Applications</h1>
+                    <ul>
+                        <li><h4>Disease Diagnosis</h4></li>
+                        <li><h4>Brain Function Studies</h4></li>
+                        <li><h4>Treatment of Brain Diseases</h4></li>
+                    </ul>
                 </div>
             </div>
-            
-            
 
-            <!-- اسلاید ۵ -->
+
+
+            <!-- اسلاید 4 -->
+            <div id="slide4" class="slide">
+                <div class="information-content">
+                    <h2>Applications</h2>
+                    <h3>Disease Diagnosis</h3>
+                    <ul>
+                        <li>
+                            <p><span>Neuropsychiatric Disorders:</span> fMRI assists in diagnosing and studying psychiatric conditions such as depression, anxiety, schizophrenia, and other neurological disorders.</p>
+                        </li>
+                        <li>
+                            <p><span>Surgical Planning:</span> fMRI helps surgeons identify functional and sensitive areas of the brain before surgery to prevent damage to these critical regions.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- اسلاید 5 -->
             <div id="slide5" class="slide">
-                <h2 class="slide-title">مکانیسم fMRI:</h2>
-                <div class="slide-content">
-                    <p>fMRI از سه روش اصلی برای اندازه‌گیری فعالیت‌های مغزی استفاده می‌کند:</p>
-                    <h4 class="titre">روش BOLD:</h4>
-                    <p>
-                        این روش بر اساس تغییرات در سیگنال مغناطیسی هموگلوبین اکسیژن‌دار (oxyhemoglobin) است.
-                    </p>
-                    <h4 class="titre">روش حجم خون:</h4>
-                    <p>
-                        این روش بر اساس تغییرات در حجم خون در مغز است.
-                    </p>
-                    <h4 class="titre">روش جریان خون:</h4>
-                    <p>
-                        این روش بر اساس تغییرات در جریان خون در مغز است.
-                    </p>
+                <div class="information-content">
+                    <h2>Applications</h2>
+                    <h3>Brain Function Studies</h3>
+                    <ul>
+                        <li>
+                            <p><span>Observing Brain Activity:</span> fMRI is used to observe and analyze brain activity in response to various stimuli or tasks.</p>
+                        </li>
+                        <li>
+                            <p><span>Neural Network Analysis:</span> fMRI is employed to study the connections and correlations between different brain regions and to understand the functional structures of neural networks.</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
 
-
-            <!-- اسلاید ۶ -->
+            <!-- اسلاید 6 -->
             <div id="slide6" class="slide">
-                <h2 class="slide-title">مکانیسم fMRI:</h2>
-                <div class="slide-content">
-                    <h3 class="titre">روش BOLD:</h3> 
-                    <p>
-                        روش BOLD پرکاربردترین روش fMRI است. این روش بر اساس این اصل است که هموگلوبین اکسیژن‌دار (oxyhemoglobin) و هموگلوبین بدون اکسیژن (deoxyhemoglobin) خواص مغناطیسی متفاوتی دارند. هنگامی که یک ناحیه از مغز فعال می‌شود، به اکسیژن بیشتری نیاز دارد. این افزایش در تقاضای اکسیژن، باعث افزایش جریان خون به آن ناحیه می‌شود. در نتیجه، هموگلوبین اکسیژن‌دار بیشتری در آن ناحیه وجود خواهد داشت.
-                    </p>
-                    <p>
-                        هموگلوبین اکسیژن‌دار خاصیت مغناطیسی قوی‌تری (دیامغناطیس) نسبت به هموگلوبین بدون اکسیژن (پارامغناطیس) دارد. افزایش هموگلوبین اکسیژن‌دار در یک ناحیه از مغز، باعث افزایش سیگنال مغناطیسی در آن ناحیه می‌شود. این افزایش سیگنال مغناطیسی، به عنوان BOLD شناخته می‌شود.
-                    </p>
-                </div>
-                <div class="slide-content">
-                    <h3 class="titre">روش حجم خون:</h3>
-                    <p>
-                        روش حجم خون بر اساس این اصل است که افزایش فعالیت مغزی، باعث افزایش حجم خون در آن ناحیه می‌شود. این افزایش حجم خون، باعث افزایش سیگنال مغناطیسی در آن ناحیه می‌شود.
-                    </p>
-                </div>
-                <div class="slide-content">
-                    <h3 class="titre">روش جریان خون:</h3>
-                    <p>
-                        روش جریان خون بر اساس این اصل است که افزایش فعالیت مغزی، باعث افزایش جریان خون در آن ناحیه می‌شود. این افزایش جریان خون، باعث افزایش سیگنال می شود.
-                    </p>
+                <div class="information-content">
+                    <h2>Applications</h2>
+                    <h3>Treatment of Brain Diseases</h3>
+                    <ul>
+                        <li>
+                            <p><span>Neurofeedback:</span> This technique trains individuals to regulate their brain activity. Using fMRI, individuals can be taught to control their brain activities in response to visual feedback.</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
 
-             <!-- اسلاید ۷ -->
-             <div id="slide7" class="slide">
-                <h2 class="slide-title">تصویر دیجیتال:</h2>
-                <div class="slide-content">
-                    <h3 class="titre">تصاویر دوبعدی:</h3>
-                    <h4 class="titre">پیکسل:</h4>
-                    <p>
-                         تصاویر دوبعدی از ماتریس‌های مربعی از واحدهای کوچک به نام پیکسل (pixel) تشکیل شده‌اند.
-                    </p>
-                    <h4 class="titre">مقادیر پیکسل:</h4>
-                    <p>
-                        هر پیکسل دارای یک یا چند مقدار عددی است که نشان‌دهنده شدت روشنایی و رنگ آن نقطه در تصویر است.
-                    </p>
-                    <h4 class="titre">مدهای رنگی:</h4>
-                    <p>
-                        محدوده خاکستری: تصاویر سیاه و سفید از 256 سطح خاکستری (0 تا 255) برای نمایش شدت روشنایی استفاده می‌کنند.
-RGB: تصاویر رنگی از 3 کانال مجزا برای نمایش رنگ‌های قرمز، سبز و آبی (Red, Green, Blue) استفاده می‌کنند. هر کانال 256 سطح (0 تا 255) برای نمایش طیف رنگی خود دارد.
-HSV: تصاویر رنگی می‌توانند از مدل‌های رنگی دیگری مانند HSV (Hue, Saturation, Value) نیز استفاده کنند.
-
-                    </p>
+            <!-- اسلاید 7 -->
+            <div id="slide7" class="slide">
+                <div class="season-content">
+                    <div class="advantage-mask">
+                        <img src="./images/advantage-mask.jpg" alt="advantage-mask" width="100%">
+                    </div>
+                    <h1>Advantages and Disadvantages</h1>
+                    <ul>
+                        <li><h4>Advantages</h4></li>
+                        <li><h4>Disadvantages</h4></li>
+                    </ul>
                 </div>
             </div>            
             
 
-             <!-- اسلاید ۸ -->
-             <div id="slide8" class="slide">
-                <h2 class="slide-title">تصویر دیجیتال:</h2>
-                <div class="slide-content">
-                    <h3 class="titre">تصاویر سه بعدی:</h3>
-                    <h4 class="titre">وکسل:</h4>
-                    <p>
-                        تصاویر سه‌بعدی از ماتریس‌های سه‌بعدی از واحدهای کوچک به نام وکسل (voxel) تشکیل شده‌اند.
-                    </p>
-                    <h4 class="titre">مقادیر وکسل:</h4>
-                    <p>
-                        هر وکسل دارای یک یا چند مقدار عددی است که نشان‌دهنده شدت سیگنال fMRI در آن نقطه از مغز است.
-                    </p>
-                    <h4 class="titre">مدهای رنگی:</h4>
-                    <p>
-                        محدوده خاکستری: تصاویر fMRI معمولاً به صورت سیاه و سفید نمایش داده می‌شوند، با 256 سطح خاکستری برای نشان‌دهنده شدت سیگنال.
- رنگ کاذب: برای نمایش بهتر اطلاعات در تصاویر fMRI، از رنگ‌های کاذب استفاده می‌شود. هر رنگ به یک محدوده خاص از شدت سیگنال تعلق می‌گیرد.
-
-                    </p>
-                </div>
-            </div>
-            
-
-             <!-- اسلاید ۹ -->
-             <div id="slide9" class="slide">
-                <h2 class="slide-title">تصویر دیجیتال:</h2>
-                <div class="slide-content">
-                    <h3 class="titre">مقایسه تصاویر دوبعدی و سه‌بعدی:</h3>
-                    <div class="comparison-table">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>ویژگی ها</th>
-                                    <th>تصاویر دوبعدی</th>
-                                    <th>تصاویر سه‌بعدی</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>وضوح</td>
-                                    <td>وضوح فضایی پایین‌تر</td>
-                                    <td>وضوح فضایی بالاتر</td>
-                                </tr>
-                                <tr>
-                                    <td>اطلاعات</td>
-                                    <td>کمتر</td>
-                                    <td>بیشتر</td>
-                                </tr>
-                                <tr>
-                                    <td>کاربرد</td>
-                                    <td>عکاسی، نقاشی دیجیتال، تصاویر وب</td>
-                                    <td>پزشکی، مهندسی، انیمیشن</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>           
-                </div>
-                <div class="slide-content">
-                    <h3 class="titre">تصویر دیجیتال در fMRI:</h3>
-                    <p>
-                        تصاویر fMRI سه‌بعدی هستند و از وکسل برای نمایش حجم‌های کوچک از بافت مغزی استفاده می‌کنند.
-تصاویر fMRI معمولاً به صورت سیاه و سفید با 256 سطح خاکستری نمایش داده می‌شوند.
-از رنگ‌های کاذب برای نمایش بهتر اطلاعات در تصاویر fMRI استفاده می‌شود.
-                    </p>
-                </div>
-            </div>
-            
-
-             <!-- اسلاید ۱۰ -->
-             <div id="slide10" class="slide">
-                <h2 class="slide-title">داینامیک بودن fMRI:</h2>
-                <div class="slide-content">
-                    <p>
-                        fMRI یک روش تصویربرداری دینامیک است، به این معنی که می‌تواند تغییرات در فعالیت‌های مغزی را در طول زمان اندازه‌گیری کند. این امر با ثبت تغییرات در سیگنال‌های همودینامیکی در مغز انجام می‌شود.
-                    </p>
-                    <h3 class="titre">مقایسه با جعبه سیاه:</h3>
-                    <p>
-                        برای درک بهتر داینامیک fMRI، می‌توان مغز را با یک جعبه سیاه مقایسه کرد:
-                    </p>
+            <!-- اسلاید 8 -->
+            <div id="slide8" class="slide">
+                <div class="information-content">
+                    <h2>Advantages and Disadvantages</h2>
+                    <h3>Advantages</h3>
                     <ul>
-                        <li><strong>ورودی:</strong> محرک‌های بصری، شنوایی، لامسه، بویایی و چشایی</li>
-                        <li><strong>خروجی:</strong> فعالیت‌های مغزی</li>
-                        <li><strong>فرایندهای داخلی:</strong> ناشناخته</li>
+                        <li>
+                            <p><span>Non-Invasive:</span> fMRI does not require surgery or the injection of radioactive substances, making it a safe method for studying the brain.</p>
+                        </li>
+                        <li>
+                            <p><span>High Spatial Resolution:</span> fMRI provides precise localization of brain activities with high spatial resolution.</p>
+                        </li>
+                        <li>
+                            <p><span>Versatility:</span> This method is applicable for a wide range of studies and uses, including research, clinical applications, and surgical planning.</p>
+                        </li>
                     </ul>
-                    <p>
-                        fMRI به ما این امکان را می‌دهد که ورودی‌ها و خروجی‌ها را مشاهده کنیم، اما نمی‌توانیم فرایندهای داخلی را به طور مستقیم مشاهده کنیم.
-                    </p>
+                </div>
+            </div>
+
+
+            <!-- اسلاید 9 -->
+            <div id="slide9" class="slide">
+                <div class="information-content">
+                    <h2>Advantages and Disadvantages</h2>
+                    <h3>Disadvantages</h3>
+                    <ul>
+                        <li>
+                            <p><span>Lower Temporal Resolution:</span> fMRI cannot capture neural activity changes instantaneously due to the time lag in the hemodynamic response following neural activity.</p>
+                        </li>
+                        <li>
+                            <p><span>High Cost:</span> fMRI equipment is expensive, with high operational and maintenance costs.</p>
+                        </li>
+                        <li>
+                            <p><span>Complex Data Analysis:</span> Analyzing fMRI data requires specialized expertise and technical skills, and the data processing can be very complex.</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
             
-            <!-- اسلاید ۱۱ -->
+
+            <!-- اسلاید 10 -->
+            <div id="slide10" class="slide">
+                <div class="season-content">
+                    <div class="basic-concept-mask">
+                        <img src="./images/basic-concept-mask.jpg" alt="basic-concept-mask" width="100%">
+                    </div>
+                    <h1>Basic Concepts</h1>
+                    <ul>
+                        <li><h4>2D and 3D Imaging</h4></li>
+                        <li><h4>Color</h4></li>
+                        <li><h4>Digital Image</h4></li>
+                        <li><h4>Hemodynamic Response Function (HRF)</h4></li>
+                        <li><h4>Nyquist Frequency</h4></li>
+                        <li><h4>fMRI Signal</h4></li>
+                        <li><h4>Data Collection from the Brain</h4></li>
+                        <li><h4>Task Design</h4></li>
+                        <li><h4>Imaging Levels</h4></li>
+                    </ul>
+                </div>
+            </div>
+            
+
+            <!-- اسلاید 11 -->
             <div id="slide11" class="slide">
-                <h2 class="slide-title">مفهوم تابع ضربه در fMRI:</h2>
-                <div class="slide-content">
-                    <p>
-                        درست است که بخش قبلی به طور کامل مفهوم تابع ضربه را در fMRI شرح نداده بود. در ادامه به بررسی این مفهوم می‌پردازیم:
-                    </p>
-                    <h3 class="titre">تابع ضربه:</h3>
-                    <p>
-                        در fMRI، تابع ضربه (Hemodynamic Response Function - HRF) به پاسخ همودینامیکی مغز به یک محرک لحظه‌ای اشاره دارد. HRF نشان می‌دهد که چگونه سیگنال fMRI در طول زمان پس از ارائه محرک تغییر می‌کند.
-                    </p>
-
-                    <h3 class="titre">شکل تابع ضربه:</h3>
-                    <p>
-                        HRF به طور کلی دارای شکل زنگوله‌ای است. در ابتدا، سیگنال fMRI به سرعت افزایش می‌یابد، سپس به حداکثر خود می‌رسد و در نهایت به آرامی به سطح پایه باز می‌گردد.
-                    </p>
-                    <p class="math">$$ S = \int_{-\infty}^{\infty} f(t) dt $$</p>
-                    <h3 class="titre">مثال:</h3>
-                    <p>
-                        فرض کنید که یک محرک بصری به طور ناگهانی به فرد ارائه می‌شود. HRF نشان می‌دهد که سیگنال fMRI در قشر بینایی در ابتدا به سرعت افزایش می‌یابد، سپس به حداکثر خود می‌رسد و در نهایت به آرامی به سطح پایه باز می‌گردد. حداکثر سیگنال fMRI نشان‌دهنده فعالیت عصبی در قشر بینایی در پاسخ به محرک بصری است.
-                    </p>
+                <div class="information-content">
+                    <h2>Basic Concepts</h2>
+                    <h3>2D and 3D Imaging</h3>
+                    <p>In fMRI, brain images are typically collected as 2D slices and then reconstructed into 3D images to provide a comprehensive view of brain activity. These 3D images facilitate more detailed and comprehensive study of the brain.</p>
                 </div>
             </div>
 
-             <!-- اسلاید ۱۲ -->
-             <div id="slide12" class="slide">
-                <h2 class="slide-title">فرکانس نایکوئیست:</h2>
-                <div class="slide-content">
-                    <p>
-                        فرکانس نایکوئیست یک مفهوم اساسی در تصویربرداری است که برای اطمینان از نمونه‌برداری صحیح از سیگنال‌ها اهمیت دارد. در fMRI، فرکانس نایکوئیست به تعداد دفعاتی که از فعالیت مغزی در طول زمان نمونه‌برداری می‌شود، اشاره دارد. برای ثبت دقیق تغییرات در فعالیت‌های مغزی، فرکانس نمونه‌برداری باید حداقل دو برابر فرکانس تغییرات مغزی باشد.
-                    </p>
-                    <p>
-                        به عنوان مثال، اگر فعالیت مغزی در طول زمان به طور سینوسی تغییر کند، فرکانس نمونه‌برداری باید حداقل دو برابر فرکانس این موج سینوسی باشد. در غیر این صورت، اطلاعات کافی برای بازسازی دقیق شکل موج سینوسی به دست نمی‌آید.
-                    </p>
-                    <p>
-                        استفاده از فرکانس نمونه‌برداری مناسب در fMRI به کاهش حجم داده‌های خروجی و در نتیجه صرفه‌جویی در هزینه‌ها و تسهیل تحلیل داده‌ها کمک می‌کند.
-                    </p>
-                </div>
+            <!-- اسلاید 12 -->
+            <div id="slide12" class="slide">
+                <div class="information-content">
+                    <h2>Basic Concepts</h2>
+                    <h3>Color</h3>
+                    <p>Different color modes are used to display fMRI images. Common modes include RGB (Red, Green, Blue) and grayscale. Heat maps are also used to display the intensity of brain activity, where areas with higher activity are shown in warmer colors (such as red and yellow), and areas with lower activity are shown in cooler colors (such as blue).</p>
+                    </div>
             </div>
 
-            <!-- اسلاید ۱۳ -->
+            <!-- اسلاید 13 -->
             <div id="slide13" class="slide">
-                <h2 class="slide-title">fMRI سیگنال</h2>
-                <div class="slide-content">
-                    <h3 class="titre">مفهوم سیگنال fMRI:</h3>
-                    <p>
-                        سیگنال‌های fMRI انعکاسی از فعالیت عصبی در مغز هستند که به صورت تغییرات همودینامیکی وابسته به سطح اکسیژن (BOLD) اندازه‌گیری می‌شوند. BOLD به طور غیرمستقیم نشان‌دهنده فعالیت نورون‌ها است.
-                    </p>
-                    <h3 class="titre">ویژگی‌های سیگنال fMRI:</h3>
-                    <p>
-                        <strong>فضایی:</strong> سیگنال fMRI در محدوده سه‌بعدی مغز به دست می‌آید و اطلاعات مربوط به فعالیت هر نقطه از مغز را در قالب وکسل (voxel) ارائه می‌دهد.
-                        <br>
-                        <strong>زمانی:</strong> سیگنال fMRI در طول زمان و در نقاط زمانی مختلف اندازه‌گیری می‌شود و تغییرات فعالیت مغزی را در طول یک آزمایش یا وظیفه شناختی ثبت می‌کند.
-                        <br>
-                        <strong>شدت:</strong> شدت سیگنال fMRI در هر وکسل نشان‌دهنده میزان فعالیت در آن نقطه از مغز است.
-                    </p>
-                    <h3 class="titre">تحلیل سیگنال fMRI:</h3>
-                    <p>
-                        تحلیلگران داده‌های fMRI با استفاده از روش‌های مختلف، تغییرات سیگنال fMRI را در نقاط زمانی مختلف و در نواحی مختلف مغز مورد بررسی قرار می‌دهند. این تغییرات، اطلاعات ارزشمندی در مورد نحوه عملکرد مغز و ارتباط بین فعالیت‌های مغزی و وظایف شناختی یا محرک‌های خارجی در اختیار آن‌ها قرار می‌دهد.
-                    </p>
+                <div class="information-content">
+                    <h2>Basic Concepts</h2>
+                    <h3>Digital Image</h3>
+                    <p>A digital image is data stored numerically and can be analyzed by a computer. In fMRI, digital images represent the level of blood oxygenation in various parts of the brain and are stored as matrices of numerical values, with each element of the matrix representing a pixel with a specific intensity.</p>
                 </div>
             </div>
 
-             <!-- اسلاید ۱۴ -->
-             <div id="slide14" class="slide">
-                <h2 class="slide-title">جمع‌آوری داده‌های مغز:</h2>
-                <div class="slide-content">
-                    <p>
-                        برای جمع‌آوری داده‌های fMRI از دستگاه اسکنر MRI استفاده می‌شود. این دستگاه، میدان مغناطیسی قوی‌ای را در اطراف سر فرد ایجاد می‌کند. سپس امواج رادیویی با فرکانس‌های خاص به مغز تابانده می‌شوند. بر اساس نحوه برهم‌کنش این امواج با بافت مغزی، سیگنال‌های مغناطیسی ضعیفی ایجاد می‌شود. این سیگنال‌ها توسط دستگاه اسکنر MRI اندازه‌گیری و ثبت می‌شوند.
-                    </p>
+            <!-- اسلاید 14 -->
+            <div id="slide14" class="slide">
+                <div class="information-content">
+                    <h2>Basic Concepts</h2>
+                    <h3>Hemodynamic Response Function (HRF)</h3>
+                    <p>The Hemodynamic Response Function (HRF) describes how the brain responds to stimuli. HRF represents changes in the BOLD signal over time and is used in task design and data analysis. HRF helps us understand how the hemodynamic response changes over time following neural activity, which is crucial for analyzing fMRI data.</p>
                 </div>
             </div>
 
-            <!-- اسلاید ۱۵ -->
+            <!-- اسلاید 15 -->
             <div id="slide15" class="slide">
-                <h2 class="slide-title">طراحی وظایف:</h2>
-                <div class="slide-content">
-                    <p>
-                        در مطالعات fMRI، از وظایف (task) برای برانگیختن فعالیت‌های مغزی خاص استفاده می‌شود. این وظایف می‌توانند محرک‌های بصری، شنوایی، لامسه‌ای یا حرکتی باشند. دو روش عمده برای طراحی وظایف در fMRI وجود دارد:
-                    </p>
-                    <h4 class="titre">روش بلوکی (Block Design):</h4>
-                    <p>
-                        در این روش، وظایف مختلف به صورت بلوک‌های زمانی متناوب ارائه می‌شوند. فعالیت مغزی در طول بلوک‌های مربوط به یک وظیفه خاص با فعالیت مغزی در طول بلوک‌های استراحت (بدون انجام وظیفه) مقایسه می‌شود.
-                    </p>
-                    <h4 class="titre">روش رویداد محور (Event-Related Design):</h4>
-                    <p>
-                        در این روش، وظایف به صورت تصادفی و با فواصل زمانی تصادفی ارائه می‌شوند. این روش برای بررسی واکنش‌های مغزی به محرک‌های خاص و ارتباط آن‌ها با زمان وقوع آن‌ها مناسب است.
-                    </p>
+                <div class="information-content">
+                    <h2>Basic Concepts</h2>
+                    <h3>Nyquist Frequency</h3>
+                    <p>The Nyquist frequency is the minimum rate at which a signal can be sampled without introducing errors. In fMRI, ensuring this frequency is critical to avoid artifacts caused by improper sampling. According to the Nyquist theorem, the sampling rate should be at least twice the highest frequency present in the signal to reconstruct the signal accurately.</p>
                 </div>
             </div>
 
-
-            <!-- اسلاید ۱۶ -->
-            <div id="slide16" class="slide">
-                <h2 class="slide-title">سطوح تصویربرداری در fMRI:</h2>
-                <div class="slide-content">
-                    <p>
-                        در تصویربرداری fMRI، از انواع مختلفی تصویربرداری برای بررسی عملکرد مغز استفاده می‌شود. هر نوع تصویربرداری، اطلاعات خاص و منحصر به فردی را ارائه می‌دهد. در این مطلب، به بررسی سه نوع اصلی تصویربرداری fMRI، شامل Localizer، Structure و EPI می‌پردازیم:
-                    </p>
-                    <h3 class="titre">Localizer (محل‌یاب):</h3>
-                    <p>
-                        <strong>کاربرد:</strong> تعیین مکان دقیق فعالیت‌های مغزی مرتبط با وظایف خاص
-                        <br>
-                        <strong>زمان استفاده:</strong> قبل از انجام آزمایش fMRI اصلی
-                        <br>
-                        <strong>مزیت:</strong> اطمینان از فعال شدن بخش‌های مشخصی از مغز در حین انجام وظایف
-                    </p>
-                    <h3 class="titre">Structure (ساختار):</h3>
-                    <p>
-                        <strong>کاربرد:</strong> مشاهده ساختارهای مغزی مانند مغز استخوانی، قشر مغزی و فضای مغزی
-                        <br>
-                        <strong>مزیت:</strong> مرجع ساختاری برای تفسیر تصاویر فعالیت مغزی (مانند تصاویر EPI)
-                    </p>
-                    <h3 class="titre">EPI (Echo Planar Imaging):</h3>
-                    <p>
-                        <strong>کاربرد:</strong> بررسی فعالیت‌های مغزی مرتبط با وظایف و تحریک‌های مختلف
-                        <br>
-                        <strong>ویژگی:</strong> تصویربرداری پیاپی و با فاصله زمانی کوتاه
-                        <br>
-                        <strong>نام دیگر:</strong> تصاویر فعالیت مغزی
-                    </p>
-                </div>
-            </div>
-
-
-             <!-- اسلاید ۱۷ -->
-            <div id="slide17" class="slide">
-                <h2 class="slide-title">سطوح تصویربرداری در fMRI:</h2>
-                <div class="slide-content">
-                    <h3 class="titre">جدول مقایسه:</h3>
-                    <table>
-                        <tr>
-                            <th>نوع تصویربرداری</th>
-                            <th>کاربرد</th>
-                            <th>زمان استفاده</th>
-                            <th>مزیت</th>
-                        </tr>
-                        <tr>
-                            <td>Localizer</td>
-                            <td>تعیین مکان فعالیت‌های مغزی</td>
-                            <td>قبل از آزمایش fMRI</td>
-                            <td>اطمینان از فعال شدن بخش‌های مشخصی از مغز</td>
-                        </tr>
-                        <tr>
-                            <td>Structure</td>
-                            <td>مشاهده ساختارهای مغزی</td>
-                            <td>-</td>
-                            <td>مرجع ساختاری برای تفسیر تصاویر EPI</td>
-                        </tr>
-                        <tr>
-                            <td>EPI</td>
-                            <td>بررسی فعالیت‌های مغزی</td>
-                            <td>-</td>
-                            <td>تصویربرداری پیاپی و با فاصله زمانی کوتاه</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-
-            
-
-            <!-- اسلاید ۱۸ -->
+            <!-- اسلاید 18 -->
             <div id="slide18" class="slide">
-                <h2 class="slide-title">پیش پردازش:</h2>
-                <div class="slide-content">
-                    <p>
-                        پیش پردازش اولین مرحله در تحلیل داده‌های fMRI است. در این مرحله، داده‌های خام fMRI برای حذف نویز و آماده‌سازی برای تحلیل‌های بعدی پردازش می‌شوند.
-                    </p>
-                    <h3 class="titre">مراحل پیش پردازش:</h3>
-                    <p>
-                        مراحل پیش پردازش در fMRI شامل موارد زیر می‌باشد:
-                    </p>
-                    <ol>
-                        <li><h4 class="titre">تبدیل فرمت فایل DICOM به Nifti</h4></li>
-                        <li><h4 class="titre">حذف نویز (Artifact Removing)</h4></li>
-                        <li><h4 class="titre">تصحیح حرکت (Motion Correction)</h4></li>
-                        <li><h4 class="titre">تصحیح زمان برش (Slice Timing Correction)</h4></li>
-                        <li><h4 class="titre">صاف‌سازی فضایی (Spatial Smoothing)</h4></li>
-                        <li><h4 class="titre">تهیه نقشه میدان مغناطیسی (BO Field Map Collection)</h4></li>
-                        <li><h4 class="titre">نرمال‌سازی فضایی (Spatial Normalization)</h4></li>
-                    </ol>
+                <div class="information-content">
+                    <h2>Basic Concepts</h2>
+                    <h3>fMRI Signal</h3>
+                    <p>The BOLD (Blood Oxygen Level Dependent) signal forms the basis of fMRI. When a brain region is active, blood flow and oxygenation levels in that region increase. These changes lead to differences in magnetic signals captured by the MRI scanner. These signals are stored as image data and then analyzed to interpret brain activity.</p>
                 </div>
             </div>
 
-
-            <!-- اسلاید ۱۹ -->
+            <!-- اسلاید 19 -->
             <div id="slide19" class="slide">
-                <h2 class="slide-title">پیش پردازش:</h2>
-                <div class="slide-content">
-                    <h3 class="titre">مراحل پیش پردازش:</h3>
-                    <h4 class="titre">1. تبدیل فرمت فایل DICOM به Nifti:</h4>
-                    <p>                        
-                        داده‌های خام اسکنر fMRI به صورت فایل‌های DICOM ذخیره می‌شوند. فایل‌های DICOM حاوی اطلاعات تصویری و اطلاعات جانبی مانند جهت‌گیری تصاویر، زمان اسکن و قدرت سیگنال هستند. در مرحله اول، فایل‌های DICOM به فرمت Nifti تبدیل می‌شوند. فرمت Nifti یک فرمت رایج برای ذخیره‌سازی و تحلیل داده‌های تصویربرداری عصبی است. تبدیل فرمت به Nifti این امکان را می‌دهد که نرم‌افزارهای مختلف تحلیل fMRI بتوانند به راحتی داده‌ها را بخوانند و پردازش کنند.
-                    </p>
-                    <p class="helper">
-                        فرمت (Digital Imaging and Communications in Medicine) DICOM یک استاندارد برای ذخیره و انتقال تصاویر پزشکی، اطلاعات و اسناد پزشکی است. این فرمت برای تصاویر مانند تصاویر رادیولوژی (مانند X-ray، CT scan، MRI و Ultrasound) استفاده می‌شود.
-                    </p>
-                    <p class="helper">
-                        فرمت NIfTI (Neuroimaging Informatics Technology Initiative) یک فرمت فایل است که برای ذخیره و تبادل داده‌های تصویربرداری مغزی و علوم مغز و اعصاب استفاده می‌شود. این فرمت اغلب برای تصاویر حاصل از روش‌های تصویربرداری مغزی مانند MRI (Resonance Imaging Magnetic) استفاده می‌شود.
-                    </p>
+                <div class="information-content">
+                    <h2>Basic Concepts</h2>
+                    <h3>Data Collection from the Brain</h3>
+                    <p>fMRI data collection is performed using an MRI scanner, which creates a strong magnetic field around the head. This process involves setting up the MRI machine, planning, and executing tasks to capture the BOLD signal. Tasks can include various activities aimed at stimulating specific brain regions to observe hemodynamic responses.</p>
                 </div>
             </div>
 
 
-            <!-- اسلاید ۲۰ -->
+            <!-- اسلاید 20 -->
             <div id="slide20" class="slide">
-                <h2 class="slide-title">پیش پردازش:</h2>
-                <div class="slide-content">
-                    <h3 class="titre">مراحل پیش پردازش:</h3>
-                    <h4 class="titre">2. حذف نویز (Artifact Removing):</h4>
-                    <p>
-                        تصاویر fMRI ممکن است تحت تأثیر انواع مختلفی از نویز قرار بگیرند، از جمله:
-                        <ul>
-                            <li>نویز حرکتی: ناشی از حرکت سر فرد در طول اسکن</li>
-                            <li>نویز فیزیولوژیکی: ناشی از ضربان قلب، تنفس و سایر فرایندهای فیزیولوژیکی</li>
-                            <li>نویز دستگاهی: ناشی از میدان مغناطیسی ناهموار اسکنر MRI و سایر عوامل</li>
-                        </ul>
-                        در این مرحله، از روش‌های مختلفی برای حذف نویز استفاده می‌شود. برخی از این روش‌ها مبتنی بر فیلتر کردن فرکانسی هستند، در حالی‌که روش‌های دیگر مبتنی بر شناسایی و حذف الگوهای نویز در تصاویر می‌باشند.
-                    </p>
+                <div class="information-content">
+                    <h2>Basic Concepts</h2>
+                    <h3>Task Design</h3>
+                    <p>Different tasks are designed for fMRI studies, including functional, cognitive, and emotional tasks. There are two main approaches to task design in fMRI studies:</p>
+                    <ul>
+                        <li>
+                            <p><span>Block Design:</span> Tasks are presented in alternating blocks of time. This method is useful for comparing brain activities between different blocks.</p>
+                        </li>
+                        <li>
+                            <p><span>Event-Related Design:</span> Tasks are presented randomly with random time intervals. This method provides higher temporal accuracy for analyzing brain responses to specific stimuli.</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
 
-
-            <!-- اسلاید ۲۱ -->
+            <!-- اسلاید 21 -->
             <div id="slide21" class="slide">
-                <h2 class="slide-title">پیش پردازش:</h2>
-                <div class="slide-content">
-                    <h3 class="titre">مراحل پیش پردازش:</h3>
-                    <h4 class="titre">3. تصحیح حرکت (Motion Correction):</h4>
-                    <p>
-                        حرکت سر فرد در طول اسکن fMRI می‌تواند منجر به نویز و اعوجاج در تصاویر شود. در این مرحله، از روش‌های تصحیح حرکت برای جبران حرکات جزئی سر استفاده می‌شود. این روش‌ها شامل شناسایی حرکت سر و تطبیق تصاویر fMRI با یک تصویر مرجع ثابت می‌باشند.
-                    </p>
+                <div class="information-content">
+                    <h2>Basic Concepts</h2>
+                    <h3>Imaging Levels</h3>
+                    <ul>
+                        <li>
+                            <p><span>Localizer:</span> Used to identify different brain locations. This imaging helps pinpoint brain regions associated with specific tasks.</p>
+                        </li>
+                        <li>
+                            <p><span>EPI (Echo Planar Imaging):</span> Allows for high-speed data collection and is very useful for fMRI studies.</p>
+                        </li>
+                        <li>
+                            <p><span>Structural:</span> Shows the overall structures of the brain and serves as a reference for other analyses. These high-resolution structural images aid in identifying and aligning different brain regions.</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
-
-            <!-- اسلاید ۲۲ -->
+            <!-- اسلاید 22 -->
             <div id="slide22" class="slide">
-                <h2 class="slide-title">پیش پردازش:</h2>
-                <div class="slide-content">
-                    <h3 class="titre">مراحل پیش پردازش:</h3>
-                    <h4 class="titre">4. تصحیح زمان برش (Slice Timing Correction):</h4>
-                    <p>
-                        اسکنر MRI تصاویر مغز را به صورت برش‌های نازک اسکن می‌کند. زمان مورد نیاز برای اسکن هر برش ممکن است کمی متفاوت باشد، که این تفاوت می‌تواند منجر به ایجاد نویز و اعوجاج در تصاویر شود. در این مرحله، از روش‌های تصحیح زمان برش برای اصلاح این تفاوت‌های زمانی استفاده می‌شود.
-                    </p>
+                <div class="season-content">
+                    <div class="physic-mask">
+                        <img src="./images/physic-mask.jpg" alt="physic-mask" width="100%">
+                    </div>
+                    <h1>Physics of MRI</h1>
+                    <ul>
+                        <li><h4>The Physics and Philosophy of MRI Imaging</h4></li>
+                    </ul>
                 </div>
             </div>
 
-
-            <!-- اسلاید ۲۳ -->
+            <!-- اسلاید 23 -->
             <div id="slide23" class="slide">
-                <h2 class="slide-title">پیش پردازش:</h2>
-                <div class="slide-content">
-                    <h3 class="titre">مراحل پیش پردازش:</h3>
-                    <h4 class="titre">5. صاف‌سازی فضایی (Spatial Smoothing):</h4>
-                    <p>
-                        تصاویر fMRI دارای نویز با فرکانس بالا هستند که ممکن است نتایج تحلیل‌های آماری را تحت تاثیر قرار دهند. در این مرحله، از روش‌های صاف‌سازی فضایی برای کاهش نویز با فرکانس بالا استفاده می‌شود. این روش با میانگین‌گیری سیگنال در یک ناحیه کوچک از مغز، باعث کاهش نویز و بهبود نسبت سیگنال به نویز می‌شود.
-                    </p>
+                <div class="information-content">
+                    <h2>Physics of MRI</h2>
+                    <h3>The Physics and Philosophy of MRI Imaging</h3>
+                    <p>MRI imaging is based on magnetic phenomena and nuclear resonance. In MRI, strong magnetic fields and radiofrequency pulses are used to create images of internal body structures. This process involves exciting hydrogen nuclei in the body and recording their magnetic responses.</p>
                 </div>
             </div>
 
-
-            <!-- اسلاید ۲۴ -->
+            <!-- اسلاید 24 -->
             <div id="slide24" class="slide">
-                <h2 class="slide-title">پیش پردازش:</h2>
-                <div class="slide-content">
-                    <h3 class="titre">مراحل پیش پردازش:</h3>
-                    <h4 class="titre">6. تهیه نقشه میدان مغناطیسی (BO Field Map Collection):</h4>
-                    <p>
-                        در برخی از توالی‌های fMRI، از نقشه میدان مغناطیسی (BO Field Map) برای تصحیح اعوجاجات ناشی از ناهمگنی میدان مغناطیسی اسکنر استفاده می‌شود. ناهمگنی میدان مغناطیسی می‌تواند باعث ایجاد اعوجاج در تصاویر fMRI شود. نقشه میدان مغناطیسی اطلاعاتی در مورد توزیع میدان مغناطیسی در مغز را در اختیار ما قرار می‌دهد که برای تصحیح اعوجاجات و بهبود دقت تصاویر fMRI استفاده می‌شود.
-                    </p>
+                <div class="information-content">
+                    <h2>Physics of MRI</h2>
+                    <ul>
+                        <li>
+                            <p><span>Main Magnetic Field (B0):</span> A strong, constant magnetic field generated by the MRI machine. This field aligns the spins of hydrogen nuclei along its direction.</p>
+                        </li>
+                        <li>
+                            <p><span>Radiofrequency Pulses (RF):</span> RF pulses are applied to hydrogen nuclei, causing them to absorb energy and move to higher energy states.</p>
+                        </li>
+                        <li>
+                            <p><span>Return to Equilibrium:</span> After the RF pulses are turned off, the hydrogen nuclei return to their equilibrium state, releasing the absorbed energy as magnetic signals. These signals are captured by the MRI receiver.</p>
+                        </li>
+                        <li>
+                            <p><span>Imaging:</span> The recorded signals are converted into image data that depict internal structures and changes. In fMRI, these images are used to analyze changes in blood oxygenation levels in the brain.</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
-
-            <!-- اسلاید ۲۵ -->
+            <!-- اسلاید 25 -->
             <div id="slide25" class="slide">
-                <h2 class="slide-title">پیش پردازش:</h2>
-                <div class="slide-content">
-                    <h3 class="titre">مراحل پیش پردازش:</h3>
-                    <h4 class="titre">7. نرمال‌سازی فضایی (Spatial Normalization):</h4>
-                    <p>
-                        مغز افراد مختلف از نظر اندازه و شکل متفاوت است. برای مقایسه داده‌های fMRI بین افراد مختلف، تصاویر fMRI باید به یک فضای استاندارد مغز هم‌ترازی شوند. در این مرحله، از روش‌های نرمال‌سازی فضایی برای هم‌ترازی تصاویر fMRI با یک فضای استاندارد مغز استفاده می‌شود. نرمال‌سازی فضایی این امکان را می‌دهد که داده‌های fMRI از افراد مختلف در یک فضای مشترک تحلیل شوند.
-                    </p>
+                <div class="season-content">
+                    <div class="slice-timing-mask">
+                        <img src="./images/slice-timing-mask.jpg" alt="slice-timing-mask" width="100%">
+                    </div>
+                    <h1>Preprocessing</h1>
+                    <ul>
+                        <li><h4>Convert Format (DICOM to Nifti)</h4></li>
+                        <li><h4>Quality Check (Removal of First Few Volumes)</h4></li>
+                        <li><h4>Motion Correction</h4></li>
+                        <li><h4>Slice Timing Correction</h4></li>
+                        <li><h4>Spatial Smoothing</h4></li>
+                        <li><h4>Temporal Filtering</h4></li>
+                        <li><h4>Global Intensity Normalization</h4></li>
+                        <li><h4>Registration</h4></li>
+                    </ul>
                 </div>
             </div>
 
-
-            <!-- اسلاید ۲۶ -->
+            <!-- اسلاید 26 -->
             <div id="slide26" class="slide">
-                <h2 class="slide-title">تحلیل آماری:</h2>
-                <div class="slide-content">
-                    <p>
-                        پس از پیش پردازش، داده‌های fMRI با استفاده از روش‌های آماری مختلف مورد تحلیل قرار می‌گیرند. هدف از تحلیل آماری، یافتن الگوهای معنی‌دار در فعالیت‌های مغزی است.
-                    </p>
-                    <h3 class="titre">روش‌های تحلیل آماری:</h3>
-                    <p>
-                        تحلیل همبستگی: این روش برای بررسی ارتباط بین فعالیت‌های مغزی در نواحی مختلف مغز استفاده می‌شود.
-                        <br>
-                        تحلیل رگرسیون: این روش برای بررسی رابطه بین فعالیت‌های مغزی و متغیرهای دیگر مانند محرک‌ها یا وظایف مختلف استفاده می‌شود.
-                        <br>
-                        تحلیل مولفه‌های مستقل (ICA): این روش برای تفکیک فعالیت‌های مغزی به مولفه‌های مستقل استفاده می‌شود.
-                    </p>
+                <div class="information-content">
+                    <h2>Preprocessing</h2>
+                    <h3>Convert Format (DICOM to Nifti)</h3>
+                    <p>Converting medical imaging files from the DICOM format to the Nifti format for fMRI data processing. The Nifti format is a standard for storing neuroimaging data, making it easier to process and analyze.</p>
                 </div>
             </div>
 
-
-            <!-- اسلاید ۲۷ -->
+            <!-- اسلاید 27 -->
             <div id="slide27" class="slide">
-                <h2 class="slide-title">نتیجه‌گیری:</h2>
-                <div class="slide-content">
-                    <p>
-                        fMRI یک ابزار قدرتمند برای مطالعه مغز انسان است. این روش با وجود محدودیت‌هایی که دارد، اطلاعات ارزشمندی در مورد نحوه عملکرد مغز و ارتباط بین فعالیت‌های مغزی و وظایف شناختی یا محرک‌های خارجی در اختیار پژوهشگران قرار می‌دهد.
-                    </p>
+                <div class="information-content">
+                    <h2>Preprocessing</h2>
+                    <h3>Quality Check (Removal of First Few Volumes)</h3>
+                    <p>Removing initial volumes to eliminate unstable signals at the beginning of the scan. This step helps improve the quality of fMRI data.</p>
+                </div>
+            </div>
+
+            <!-- اسلاید 28 -->
+            <div id="slide28" class="slide">
+                <div class="information-content">
+                    <h2>Preprocessing</h2>
+                    <h3>Motion Correction</h3>
+                    <p>Correcting for head or body movements to ensure more accurate data. This includes two main types:</p>
+                    <ul>
+                        <li>
+                            <p><span>Rotation:</span> Correcting for head or body rotations.</p>
+                        </li>
+                        <li>
+                            <p><span>Translation:</span> Correcting for head or body translations. These corrections are made using image alignment algorithms to remove unwanted movements.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- اسلاید 29 -->
+            <div id="slide29" class="slide">
+                <div class="information-content">
+                    <h2>Preprocessing</h2>
+                    <h3>Slice Timing Correction</h3>
+                    <p>Correcting timing differences between different slices to ensure data consistency. This step improves the temporal accuracy of the data by adjusting for timing differences in recording brain signals.</p>
+                </div>
+            </div>
+
+            <!-- اسلاید 30 -->
+            <div id="slide30" class="slide">
+                <div class="information-content">
+                    <h2>Preprocessing</h2>
+                    <h3>Spatial Smoothing</h3>
+                    <p>Increasing the signal-to-noise ratio by smoothing the data. This is done using spatial filters that average the intensities of neighboring points.</p>
+                </div>
+            </div>
+
+            <!-- اسلاید 31 -->
+            <div id="slide31" class="slide">
+                <div class="information-content">
+                    <h2>Preprocessing</h2>
+                    <h3>Temporal Filtering</h3>
+                    <p>Removing noise and unrelated signals using temporal filters. These filters remove high-frequency noise and emphasize significant signals.</p>
+                </div>
+            </div>
+
+            <!-- اسلاید 32 -->
+            <div id="slide32" class="slide">
+                <div class="information-content">
+                    <h2>Preprocessing</h2>
+                    <h3>Global Intensity Normalization</h3>
+                    <p>Normalizing global intensities to reduce differences between scans. This step helps align and standardize different data sets for more reliable statistical analysis.</p>
                 </div>
             </div>
 
 
-             <!-- اسلاید ۲۸ -->
-             <div id="slide22" class="slide">
-                <h2 class="slide-title">تقدیر و تشکر و منابع</h2>
-                <div class="slide-content">
-                    <p></p>
+            <!-- اسلاید 33 -->
+            <div id="slide33" class="slide">
+                <div class="information-content">
+                    <h2>Preprocessing</h2>
+                    <h3>Registration</h3>
+                    <p>Aligning fMRI data with structural images for more accurate data matching. This involves aligning fMRI images with high-resolution structural images of the brain to facilitate precise analysis.</p>
                 </div>
             </div>
 
-
-             <!-- اسلاید ۲۹ -->
-             <div id="slide22" class="slide">
-                <h2 class="slide-title">پایان</h2>
-                <div class="slide-content">
-                    <p></p>
+            <!-- اسلاید 34 -->
+            <div id="slide34" class="slide">
+                <div class="season-content">
+                    <div class="data-procesing-mask">
+                        <img src="./images/data-processing-mask.jpg" alt="data-processing-mask" width="100%">
+                    </div>
+                    <h1>Data Processing</h1>
+                    <ul>
+                        <li><h4>General Linear Model (GLM)</h4></li>
+                        <li><h4>Clustering</h4></li>
+                    </ul>
                 </div>
             </div>
+
+            <!-- اسلاید 35 -->
+            <div id="slide35" class="slide">
+                <div class="information-content">
+                    div.data-procesing-mask
+                    <h2>Data Processing</h2>
+                    <h3>General Linear Model (GLM)</h3>
+                    <p>Using the General Linear Model to analyze fMRI data and identify active brain regions. This model helps analyze the correlation between brain activity and the tasks presented to subjects.</p>
+                </div>
+            </div>
+
+            <!-- اسلاید 36 -->
+            <div id="slide36" class="slide">
+                <div class="information-content">
+                    <h2>Data Processing</h2>
+                    <h3>Clustering</h3>
+                    <p>Grouping data to identify patterns and correlated brain regions. This method helps identify clusters of brain activity and analyze spatial and temporal correlations.</p>
+                </div>
+            </div>
+
+            <!-- اسلاید 37 -->
+            <div id="slide37" class="slide">
+                <div class="season-content">
+                    <div class="statistical-mask">
+                        <img src="./images/606-6067698_neuroscience-brain-hd-png-download.png" alt="statistical" width="100%">
+                    </div>
+                    <h1>Statistical Inference</h1>
+                    <ul>
+                        <li><h4>Statistical Inference and Accuracy of Analysis</h4></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- اسلاید 38 -->
+            <div id="slide38" class="slide">
+                <div class="information-content">
+                    <h2>Statistical Inference</h2>
+                    <h3>Statistical Inference and Accuracy of Analysis</h3>
+                    <p>Using statistical methods to analyze data and assess the validity and reliability of results. This includes statistical tests and random models to determine the significance of findings. Statistical analysis in fMRI aims to examine correlations, test hypotheses, and identify active brain regions based on recorded data.</p>
+                </div>
+            </div>
+        
         </main>
         <footer>
-            <p><span class="date">2024 March</span> <span class="fTitle">تصویر برداری fMRI</span> <span id="pageNumber" class="pageNumber"></span></p>         
+            <p><span class="date">2024 March</span> <span class="fTitle">تصویر برداری fMRI</span> <span id="pageNumber" class="pageNumber"></span></p>   
         </footer>
     </div>
     
