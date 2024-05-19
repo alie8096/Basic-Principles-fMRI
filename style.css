@@ -479,10 +479,10 @@ li::marker {
 
 /* ----------------------------- style of picture and animations ----------------------------- */
 .image-2d-3d{
-    margin: 10px auto;
-    padding: 8px 15px;
-    width: 90%;
-    height: 45%;
+    margin: 0 auto;
+    padding: 8px 0px;
+    width: 100%;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -557,10 +557,34 @@ li::marker {
 }
 
 
-img.BOLD-signal {
-    position: absolute;
-    width: 400px;
-    top: 100px;
+
+
+.fmri-signal {
+    margin-top: -20px;
+    width: 100%;
+    height: 330px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fmri-signal img {
+    height: 90%;
+}
+
+
+.imaging {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imaging img {
+    height: 90%;
+    border-radius: 12px;
 }
 
 img.block-task {
@@ -577,6 +601,11 @@ img.block-task {
     width: 350px;
 }
 
+.filtering {
+    width: 720px;
+    margin: auto;
+    height: 350px;
+}
 
 .quality {
     padding: 20px 0px;
@@ -597,12 +626,31 @@ img.block-task {
     align-items: center;
 }
 
+.general-model {
+    width: 400px;
+    margin: auto;
+}
 
 .spatial {
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.clustering {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 360px;
+}
+
+.statistical {
+    margin: auto;
+    width: 330px;
+    height: 330px;
 }
 /* ---------------------------------------------------------------------- */
 /* Animation style */
