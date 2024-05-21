@@ -10,9 +10,8 @@ The presentation covers the principles and applications of fMRI imaging in neuro
 
 ## Author
 
-- **Author**:
-+ Ali Ebrahimian
-+ Mahdi Rezaie
++ [Ali Ebrahimian](https://github.com/alie8096)
++ [Mahdi Rezaie](https://github.com/Mahd25)
 + AmirReza KhaksarHaghani
 
 ## License
