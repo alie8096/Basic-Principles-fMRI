@@ -2,13 +2,18 @@
 
 This repository contains the source code for a presentation about fMRI (functional magnetic resonance imaging) imaging method and its performance, developed for the imaging course in medical engineering at Shahrekord Azad University.
 
+**[View Presentation](https://alie8096.github.io/Basic-Principles-fMRI/)**
+
 ## About
 
 The presentation covers the principles and applications of fMRI imaging in neuroscience and medical research. It provides an overview of the technology, its methodology, and its significance in understanding brain function and pathology.
 
 ## Author
 
-- **Author**: Ali Ebrahimian
+- **Author**:
++ Ali Ebrahimian
++ Mahdi Rezaie
++ AmirReza KhaksarHaghani
 
 ## License
 
